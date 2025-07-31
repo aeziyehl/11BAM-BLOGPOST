@@ -188,7 +188,7 @@
   .banner-content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 
     > a {
@@ -223,7 +223,6 @@
       border-top: 8px;
       margin-bottom: 0%;
       color: $header-bg-color;
-      text-align: center;
       padding-bottom: 7px;
       @include animation-fade-in(0.1);
     }
@@ -256,7 +255,7 @@
       width: $site-banner-picture-sze_wdth;
 
       > img {
-        @include animation-fade-in(1.60);
+        @include animation-fade-in(1.6);
       }
     }
   }
@@ -367,7 +366,7 @@
       color: $text-color;
     }
     &:hover {
-      background: linear-gradient(0deg,rgba(68,71,70,.15),rgba(68,71,70,.15));
+      background: linear-gradient(0deg, rgba(68, 71, 70, 0.15), rgba(68, 71, 70, 0.15));
     }
   }
   .post {
@@ -444,32 +443,31 @@
         }
       }
     }
-
-  }    
+  }
   .post-descriptions {
-      p {
-        //  Make the description shorter
-        margin: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3; // line height
-        -webkit-box-orient: vertical;
-      }
+    p {
+      //  Make the description shorter
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3; // line height
+      -webkit-box-orient: vertical;
+    }
 
-      > h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      a {
-        @include body-medium;
-        a[href^="#"] {
-          display: none
-        }
+    > h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a {
+      @include body-medium;
+      a[href^="#"] {
+        display: none;
       }
     }
+  }
 }
 .site-post-list-title {
   @include display-large;
