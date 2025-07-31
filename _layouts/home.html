@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+{%- include Head.html-%}
+
+<body>
+  {%- include Header.html -%}
+  <header class="site-banner" role="banner">
+    <div class="banner-content" id="banner-content">
+      <p class="page-header-title">{{site.title}}</p>
+      <p class="site-banner-description">{{site.description}}</p>
+      <!-- <a href="{{ site.Header.header_link_2 | relative_url }}">{{site.Header.header_name_2}}</a> -->
+    </div>
+    <div class="site-banner-img-container">
+      <p>PICTURE IS TEMP :)</p>
+      <img src="{{site.baseurl}}/assets/img/homepage-pic.png">
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="wrapper">{% include assets/anchor-headings.html html=content anchorBody="#" %}</div>
+  </main>
+  {%- include assets/BTT.html-%}
+  {%- include Footer.html-%}
+</body>
+
+</html>

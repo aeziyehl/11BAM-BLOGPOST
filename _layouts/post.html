@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  {%- include Head.html-%}
+
+  <body>
+    {%- include Header.html-%}
+    <main class="post-content">
+        <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">{{ page.title | escape }}</h1>
+            <div class="post-meta text-muted">
+              {% if site.socials.name %} {% assign author = site.socials.name %} {% endif %} {% if
+              page.author %} {% assign author = page.author %} {% endif %} By
+              <span class="text-unmuted" itemprop="name">{{ author }}</span>
+            </div>
+            <span class="post-meta text-muted">
+              Posted {%- assign date_format = site.fica.date_format | default: "%b %-d, %Y" -%}
+              <time class="text-unmuted" datetime="{{ page.date | date_to_xmlschema }}">
+                {{ page.date | date: date_format }}
+              </time>
+            </span>
+            <span class="post-meta text-muted">
+              {%- if page.modified_date -%} • Modified {%- assign mdate = page.modified_date |
+              date_to_xmlschema -%}
+              <time class="text-unmuted" datetime="{{ mdate }}">
+                {{ mdate | date: date_format }}
+              </time>
+              {%- endif -%}
+            </span>
+          </header>
+          {% include assets/anchor-headings.html html=content anchorBody="#" %}
+          <div class="post-footer">
+              <a href="{{ site.Header.header_link_2 | relative_url }}" class="material-icons-round post-nav-svg"> arrow_back_ios </a>
+          </div>
+          {%- if site.show_comments -%}
+           {%- include assets/comments.html -%}
+          {%- endif -%}
+        </article>
+        {%- unless page.post_toc == false -%}
+        <div class="post-toc" id="toc">
+          <h2>Contents</h2>
+          {% include assets/toc.html html=content h_min=1 h_max=3 %}
+        </div>
+        {%- endunless -%}
+    </main>
+    {%- include assets/BTT.html-%} {%- include Footer.html-%}
+  </body>
+</html>
