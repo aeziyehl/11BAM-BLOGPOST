@@ -1,11 +1,11 @@
-name: 'Fica testing tool'
+name: 'Jekyll Build tool'
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
