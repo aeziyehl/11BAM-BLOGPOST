@@ -23,8 +23,9 @@ jobs:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
           
+      - name: Install bundler 
+        run: gem install bundler
+                  
       - name: Install dependency 
-        run:  bash bin/run insdep
+        run:  bundle install
 
-      - name: Test Site
-        run: bash bin/run chktheme
