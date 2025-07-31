@@ -8,7 +8,14 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
+
 gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
+gem "jekyll-seo-tag", "~> 2.8.0"
+gem 'wdm', '>= 0.1.1' if Gem.win_platform?
+gem 'jekyll-paginate', '~> 1.1'
+gem "webrick", "~> 1.7"
+gem "kramdown-parser-gfm", "~> 1.1"
+
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -26,6 +33,4 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo-data"
 end
 
-# Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1" if Gem.win_platform?
 
