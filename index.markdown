@@ -3,7 +3,7 @@ layout: home
 home: true
 ---
 
-**HI THERE**, this site is under construction. There wil be changes made on this site almost constantly. **FEEDBACK** is appreciated even if it is bad or good. Thank u :)
+> **HI THERE**, this site is under construction. There wil be changes made on this site almost constantly.  **FEEDBACK** is appreciated even if it is bad or good. Thank u :)
 {: .prompt-warning }
 
 # TODO

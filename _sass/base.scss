@@ -3,8 +3,7 @@ html {
   scroll-behavior: smooth;
 
   ::selection {
-    background-color: $highlight-bg-color;
-    color: $highlight-text-color;
+    @include surface;
   }
 }
 
@@ -57,9 +56,8 @@ figure,
 
 body {
   @include body-medium;
+  @include background;
   // font: $font-weight #{$font-size}/#{$line-height} $font-family;
-  color: $text-color;
-  background-color: $primary_color;
   -webkit-text-size-adjust: 100%;
   font-kerning: normal;
   min-height: 100vh;
@@ -73,7 +71,7 @@ hr {
   margin-top: $font-spacing;
   margin-bottom: $font-spacing;
   border: 0;
-  border-top: 2px solid $text-mute-color;
+  border-top: 2px solid $md-sys-color-outline;
   border-radius: 7px;
 }
 
@@ -151,11 +149,11 @@ ol {
 a {
   text-decoration: none;
   transition: $transition-links;
-  color: $link-visited-color;
+  color: $md-extended-color-SecondColor-color;
   font-weight: 700;
 
   &:hover {
-    color: $link-hover-color;
+    color: $md-extended-color-SecondColor-on-color-container;
     text-decoration: none;
   }
 }

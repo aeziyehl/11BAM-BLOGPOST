@@ -4,7 +4,7 @@
 .site-nav {
   display: flex;
   align-items: center;
-  background: $site-header-bg;
+  background: $md-sys-elevation-level2;
   height: 80px;
   width: 100%;
   z-index: 100;
@@ -15,15 +15,15 @@
     margin-left: 0;
     a {
       &:first-child {
-        color: rgba(0, 0, 0, 0.54);
-        background-color: $link-color;
+        background: $md-sys-color-primary;
+        color: $md-sys-color-on-primary;
         transition: $transition-links;
         padding: 11px 19px 13px;
         border-radius: 40px;
         @include animation-fade-in(0.3);
 
         &:hover {
-          background-color: $btn-color-hover;
+          border-radius: 10px;
         }
       }
     }
@@ -40,23 +40,22 @@
     @include title-small;
     text-transform: uppercase;
     &:hover {
-      color: $text-mute-color;
+      color: $md-extended-color-SecondColor-color;
     }
   }
 
   .site-nav-logo {
     display: flex;
     text-transform: none;
-    color: $text-color;
+    color: $md-sys-color-secondary;
     font-size: 32px;
     line-height: 80px;
     padding: 0 13px;
     font-weight: bold;
-    margin-right: auto;
     @include animation-fade-in(0.1);
 
     &:hover {
-      color: $text-mute-color;
+      color: $md-extended-color-SecondColor-on-color-container;
       background-color: transparent;
 
       img {
@@ -69,17 +68,22 @@
       height: 32px;
       transition: all 0.7s ease-in-out;
     }
-    p {
+    span {
       margin-bottom: 0px;
       line-height: 32px;
+
+      &:first-child {
+        font-family: $md-ref-typeface-brand;
+        color: $md-sys-color-primary;
+      }
+      &:last-child {
+        padding-left: 5px;
+        font-weight: 1000;
+        color: $md-extended-color-SecondColor-color;
+      }
     }
     @media screen and (min-width: $pc-width) {
       padding: 0 30px;
-    }
-    @media screen and (max-width: $Site-Nav-Logo-text-autohide) {
-      p {
-        display: none;
-      }
     }
   }
   .checkbtn {
@@ -157,12 +161,12 @@
 //
 .header-home-mod {
   position: static;
-  background-color: $home-header-title-color;
+  background: $md-sys-elevation-level2;
 }
 .site-banner {
   padding: 40px 15px 40px 15px;
   color: $text-color;
-  background-color: $home-header-title-color;
+  background: $md-sys-elevation-level2;
   text-align: center;
   justify-content: space-around;
   line-height: 1.5;
@@ -222,7 +226,7 @@
       @include display-medium;
       border-top: 8px;
       margin-bottom: 0%;
-      color: $header-bg-color;
+      color: $md-sys-color-primary;
       padding-bottom: 7px;
       @include animation-fade-in(0.1);
     }
@@ -238,7 +242,7 @@
 
   // For Large Screens
   @media screen and (min-width: $mobile-width) {
-    border-bottom: 100px solid $home-header-title-color;
+    border-bottom: 100px solid $md-sys-elevation-level2;
 
     .banner-content {
       > a {
@@ -522,7 +526,7 @@
       list-style: none;
       color: $text-color;
       width: calc(100% - (#{$font-spacing} / 2));
-      padding: 0 ( calc($font-spacing / 2));
+      padding: 0 (calc($font-spacing / 2));
 
       &:first-child {
         padding: 1px 0px 0px;

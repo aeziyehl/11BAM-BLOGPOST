@@ -99,10 +99,10 @@ $Site-Nav-Logo-text-autohide: 560px !default;
 }
 
 @mixin prompt($gf-icon, $gf-color, $bg-color, $fnt-fam) {
-  border-radius: 5px;
+  border-radius: 12px;
   padding: 0.8rem 1.2rem;
   font-style: normal;
-  color: $text-color;
+  color: $gf-color;
   border-left: 6px solid $gf-color;
   background-color: $bg-color;
   p {
