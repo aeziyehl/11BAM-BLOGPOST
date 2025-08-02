@@ -14,5 +14,6 @@ home: true
 - Change the font if possible
 - Basic material 3 Ui implementation 
 - Change the Navigation header and footer
+- add search 
 
 You can add more to the todo list just pm me 😎😎😎
