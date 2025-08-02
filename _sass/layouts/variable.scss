@@ -83,18 +83,18 @@ $Site-Nav-Logo-text-autohide: 560px !default;
 }
 
 @mixin footer-wrapper {
-  margin-bottom: $font-spacing / 2;
+  margin-bottom:  calc($font-spacing / 2);
   width: calc(18% - (#{$font-spacing} / 2));
-  padding: 0 ($font-spacing / 2);
+  padding: 0 ( calc($font-spacing / 2));
 
   &:first-child {
-    padding-right: $font-spacing / 2;
+    padding-right:  calc($font-spacing / 2);
     padding-left: 0;
   }
 
   &:last-child {
     padding-right: 0;
-    padding-left: $font-spacing / 2;
+    padding-left:  calc($font-spacing / 2);
   }
 }
 

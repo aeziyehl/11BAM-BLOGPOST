@@ -522,7 +522,7 @@
       list-style: none;
       color: $text-color;
       width: calc(100% - (#{$font-spacing} / 2));
-      padding: 0 ($font-spacing / 2);
+      padding: 0 ( calc($font-spacing / 2));
 
       &:first-child {
         padding: 1px 0px 0px;
