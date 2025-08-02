@@ -24,7 +24,7 @@ title: Bl. Andrew of Montreale
 Abbreviation: BAM
 Purpose: Blog Post 
 
-description: "A short description about the site :)"
+description: "A BLOGPOST to showcase the outputs of BAM Students"
 
 show_descriptions: true # set to true to show descriptions in posts
 show_comments: true # set to true to show comments in posts
@@ -45,38 +45,6 @@ Header:
 
 Footer:
   show-footer-copyright: true # set to true to show footer copyright
-  #  Section 1
-  footer_section_1_title: find me on
-  footer_section_1_links_1_name: Github
-  footer_section_1_links_1_link: https://github.com/aeziyehl
-
-  footer_section_1_links_2_name: Youtube
-  footer_section_1_links_2_link: /
-
-  footer_section_1_links_3_name: Stackoverflow
-  footer_section_1_links_3_link: /
-
-  #  Section 2
-  footer_section_2_title: You're Site
-  footer_section_2_links_1_name: Lorem
-  footer_section_2_links_1_link: /
-
-  footer_section_2_links_2_name: ispum
-  footer_section_2_links_2_link: /
-
-  footer_section_2_links_3_name: dolor
-  footer_section_2_links_3_link: /
-
-  # Section 3
-  footer_section_3_title: Customize
-  footer_section_3_links_1_name: Lorem
-  footer_section_3_links_1_link: /
-
-  footer_section_3_links_2_name: ispum
-  footer_section_3_links_2_link: /
-
-  footer_section_3_links_3_name: dolor
-  footer_section_3_links_3_link: /
 
 google_analytics: 
   enabled: true # if false, it disables Google Analytics

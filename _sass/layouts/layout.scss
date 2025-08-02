@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   background: $md-sys-elevation-level2;
+  border-radius: 40px;
   height: 80px;
   width: 100%;
   z-index: 100;
@@ -58,6 +59,11 @@
       color: $md-extended-color-SecondColor-on-color-container;
       background-color: transparent;
 
+      span:first-child,
+      span:last-child {
+        color: $md-extended-color-SecondColor-on-color-container;
+      }
+
       img {
         opacity: 0.5;
         transition: $transition-links;
@@ -70,6 +76,7 @@
     }
     span {
       margin-bottom: 0px;
+      transition: $transition-links;
       line-height: 32px;
 
       &:first-child {
@@ -105,6 +112,10 @@
     display: none;
   }
   @media (max-width: 885px) {
+    .site-nav-logo {
+      margin-right: auto;
+    }
+
     .checkbtn {
       display: block;
     }
@@ -112,7 +123,7 @@
       position: fixed;
       width: 100%;
       height: 100vh;
-      background: $primary_color;
+      background: $md-sys-color-surface;
       top: 80px;
       left: 100%;
       text-align: center;
@@ -164,11 +175,13 @@
   background: $md-sys-elevation-level2;
 }
 .site-banner {
-  padding: 40px 15px 40px 15px;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 50px;
   color: $text-color;
   background: $md-sys-elevation-level2;
   text-align: center;
-  justify-content: space-around;
+  justify-content: center;
   line-height: 1.5;
 
   .site-banner-img-container {
@@ -232,9 +245,10 @@
     }
 
     .site-banner-description {
-      border-top: 8px;
+      margin-top: 18px;
       margin-bottom: 0%;
       @include title-medium;
+      color: $md-extended-color-SecondColor-on-color-container;
       padding-bottom: 7px;
       @include animation-fade-in(1);
     }
@@ -253,8 +267,7 @@
 
   @media screen and (min-width: 993px) {
     display: flex;
-    padding: 40px 10px 40px 10px;
-
+    margin: 10px 100px 10px 100px;
     .site-banner-img-container {
       width: $site-banner-picture-sze_wdth;
 
@@ -481,9 +494,6 @@
 // Site footer
 //
 .site-footer {
-  background-color: $footer-bg-color;
-  padding-top: $font-spacing;
-
   .site-footer-wrapper {
     display: flex;
     flex-direction: column-reverse;
