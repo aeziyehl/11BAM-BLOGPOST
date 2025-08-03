@@ -383,7 +383,7 @@ dl {
   margin: 10px auto;
   max-width: 400px;
   text-align: center;
-  background-color: $error-div-bg-color;
+  background-color: $md-sys-color-on-tertiary-fixed-variant;
   border-radius: 20px;
   align-content: center;
   .prompt-404 {
@@ -429,7 +429,7 @@ dl {
       margin-left: 3px;
       margin-right: 5px;
       margin-top: 50px;
-      fill: $error-btn-svg-color;
+      fill: $md-sys-color-tertiary-fixed;
     }
   }
 }
