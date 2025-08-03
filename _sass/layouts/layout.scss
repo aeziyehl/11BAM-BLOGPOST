@@ -207,6 +207,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    margin-top: 30px;
 
     > a {
       display: block;
@@ -240,6 +241,7 @@
       border-top: 8px;
       margin-bottom: 0%;
       color: $md-sys-color-primary;
+      margin-left: 20px;
       padding-bottom: 7px;
       @include animation-fade-in(0.1);
     }
@@ -274,6 +276,9 @@
       > img {
         @include animation-fade-in(1.6);
       }
+    }
+    .banner-content {
+      margin: 0px;
     }
   }
 }

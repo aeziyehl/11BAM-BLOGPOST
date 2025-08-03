@@ -196,7 +196,7 @@ table {
 .post-toc {
   position: sticky;
   top: 2rem;
-  border-left: 1px solid $text-color;
+  border-left: 1px solid $md-sys-color-outline;
   margin-left: 10px;
   padding-left: 10px;
   align-self: start;
@@ -215,28 +215,18 @@ table {
     padding: 0;
   }
   a {
+    color: $md-sys-color-on-surface;
     padding-left: 1rem;
-    color: $text-mute-color;
-
-    &:visited {
-      color: $text-mute-color;
-    }
-
-    &:hover {
-      color: $text-color;
-    }
+    transition: none;
   }
   ul {
     padding: 0;
   }
 
-  li {
-    padding-bottom: 5px;
-  }
   li.active > a {
-    border-radius: 5px;
+    border-radius: 12px;
     display: flex;
-    border: 1px solid;
+    border: 1px solid $md-sys-color-outline;
     animation-duration: 0.3s;
     animation-fill-mode: both;
     animation-name: TOC-Entrance;
@@ -245,7 +235,7 @@ table {
     a {
       animation-duration: 0.3s;
       animation-fill-mode: both;
-      animation-name: TOC-Exit;
+      animation-name: TOCC-Exit;
       opacity: 0.5;
 
       &:hover {
@@ -256,7 +246,14 @@ table {
       display: none;
     }
   }
-  @media screen and (max-width: 1111px) {
+
+  li {
+    padding-bottom: 5px;
+    a:hover {
+      border-radius: 2px;
+    }
+  }
+  @media (max-width: 1309px) {
     display: none;
     width: 0px;
   }

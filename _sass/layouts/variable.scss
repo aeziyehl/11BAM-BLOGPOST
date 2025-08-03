@@ -213,3 +213,23 @@ $Site-Nav-Logo-text-autohide: 560px !default;
   }
 }
 
+@keyframes TOC-Entrance {
+  from {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes TOC-Exit {
+  from {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-1rem);
+  }
+}

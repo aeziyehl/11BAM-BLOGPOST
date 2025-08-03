@@ -95,9 +95,11 @@ p {
 
 .post-content {
   padding: 30px $font-spacing - 5 0 $font-spacing - 5;
-  margin: 0 auto 0 auto;
+  // flex: 1 0 auto;
+  // overflow: hidden;
 
-  @media screen and (min-width: 1111px) {
+  @media screen and (min-width: 1300px) {
+    // margin: 0 auto 0 auto;
     display: grid;
     grid-template-columns: 1fr 15em;
   }
@@ -199,7 +201,7 @@ figcaption {
 blockquote {
   color: $blockquote-text-color;
   border-left: 4px solid $code-background-color;
-  padding-left:  calc($font-spacing / 2);
+  padding-left: calc($font-spacing / 2);
   font-style: italic;
 
   > :last-child {
@@ -383,7 +385,7 @@ dl {
   margin: 10px auto;
   max-width: 400px;
   text-align: center;
-  background-color: $md-sys-color-on-tertiary-fixed-variant;
+  background-color: $md-sys-color-surface-container-high;
   border-radius: 20px;
   align-content: center;
   .prompt-404 {
@@ -403,24 +405,20 @@ dl {
 
     .btn-404 {
       display: inline-block;
-      padding: 17px 16px 16px;
-      color: #e7e7e7;
-      background-color: #2e353e;
+      padding: 24px 70px 24px 70px;
+      margin-bottom: 50px;
+      @include on-primary-container;
+      @include title-small;
       transition: all 0.2s ease-in-out;
-      width: 92%;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
+      border-radius: 30px;
 
       &,
       &:visited {
-        color: $text-color;
+        @include on-primary-container;
       }
 
       &:hover {
-        color: $btn-text-hover-color;
-        text-decoration: none;
-        background-color: $btn-color-hover;
-        border-color: $btn-color-hover;
+        border-radius: 12px;
       }
     }
     > svg {
@@ -429,7 +427,7 @@ dl {
       margin-left: 3px;
       margin-right: 5px;
       margin-top: 50px;
-      fill: $md-sys-color-tertiary-fixed;
+      fill: $md-sys-color-on-surface;
     }
   }
 }
