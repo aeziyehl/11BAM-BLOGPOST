@@ -46,6 +46,7 @@ $content-width: 800px !default;
 $mobile-width: 710px !default;
 $pc-width: 800px !default;
 $medium-width: 442px !default;
+$defualt-width: 1000px !default;
 
 $Site-Nav-Logo-text-autohide: 560px !default;
 
@@ -231,5 +232,43 @@ $Site-Nav-Logo-text-autohide: 560px !default;
   }
   to {
     transform: translateY(-1rem);
+  }
+}
+
+@keyframes Drawer-Entrance {
+  from {
+    transform: translateX(-1000rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+@keyframes Drawer-exit {
+  from {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+  to {    
+    transform: translateX(-1000rem);
+    opacity: 0;
+
+  }
+}
+@keyframes opacitychange {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opacityrestore {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }

@@ -1,4 +1,3 @@
-
 //  Copyright 2016 Google Inc. All rights reserved.
 
 //  Licensed under the Apache License, Version 2.0 (the "License";
@@ -12,7 +11,6 @@
 //  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
-
 
 @mixin primary {
   color: $md-sys-color-on-primary;
@@ -68,7 +66,7 @@
 }
 @mixin surface {
   color: $md-sys-color-on-surface;
-  background-color: mix( $md-sys-color-surface,  $md-sys-color-primary, 90%);
+  background-color: mix($md-sys-color-surface, $md-sys-color-primary, 90%);
 }
 @mixin surface-variant {
   color: $md-sys-color-on-surface-variant;
@@ -127,4 +125,20 @@
 }
 @mixin white-text {
   color: $md-ref-palette-white;
+}
+
+@mixin md-sys-elevation-level1($color) {
+  background: linear-gradient(0deg, #6750a40d, #6750a40d), $color;
+}
+@mixin md-sys-elevation-level2($color) {
+  background: linear-gradient(0deg, #6750a414, #6750a414), $color;
+}
+@mixin md-sys-elevation-level3($color) {
+  background: linear-gradient(0deg, #6750a41c, #6750a41c), $color;
+}
+@mixin md-sys-elevation-level4($color) {
+  background: linear-gradient(0deg, #6750a41f, #6750a41f), $color;
+}
+@mixin md-sys-elevation-level5($color) {
+  background: linear-gradient(0deg, #6750a424, #6750a424), $color;
 }

@@ -1,25 +1,47 @@
-const nav = document.getElementById("site-nav")
-const navcheck = document.getElementById("site-nav-check")
+const nav = document.getElementById("site-nav");
+const nav_scrim = document.querySelector("#nav-scrim");
+const navCheck = document.getElementById("site-nav-check-btn");
+const navLinkContainer = document.getElementById("site-nav-links");
 const screenWidth = window.innerWidth;
-const headers= document.getElementsByTagName('h1', "h2", "h3", "h4", "h5")
+const headers = document.getElementsByTagName("h1", "h2", "h3", "h4", "h5");
 window.addEventListener("resize", function () {
-    if (window.innerWidth !== screenWidth) {
-        // Do something
-        if (screenWidth < 1993) {
-            document.getElementById("banner-content").style.transform = "translateX(0)";
-        }
+  if (window.innerWidth !== screenWidth) {
+    // Do something
+    if (screenWidth < 1993) {
+      document.getElementById("banner-content").style.transform = "translateX(0)";
     }
-}
-);
-navcheck.addEventListener('click', () => {
-    if (navcheck.checked) {
-    nav.style.position = "fixed";
-    document.documentElement.style.overflow = "hidden";
-    } else {
-    nav.style.position = "static";
-    document.documentElement.style.overflow = "auto";
-    }
+  }
 });
+document.querySelector("#site-nav-check-btn").onclick = function () {
+  new Animation("site-animations-show", "site-animations-hide");
+  nav_scrim.style.display = "block";
+};
+document.querySelector("#site-nav-close-btn").onclick = function () {
+  new Animation("site-animations-hide", "site-animations-show");
+  nav_scrim.style.display = "none";
+  setTimeout(() => {
+    nav.classList.remove("site-animations-hide");
+  }, 60);
+};
+class Animation {
+  constructor(add, remove) {
+    nav.classList.remove(remove);
+    nav.classList.add(add);
+  }
+}
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 10 && nav.classList.contains("site-animations-show")) {
+    new Animation("site-animations-hide", "site-animations-show");
+    nav.style.position = "static";
+    nav_scrim.style.display = "none";
+    document.documentElement.style.overflow = "auto";
+    setTimeout(() => {
+      nav.classList.remove("site-animations-hide");
+    }, 60);
+  }
+});
+
 // window.onscroll = function() {NavBar()};
 
 // var navbar = document.getElementById("nav");

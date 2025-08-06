@@ -258,3 +258,41 @@ table {
     width: 0px;
   }
 }
+
+//
+// Search
+//
+Search {
+  @include md-sys-elevation-level2($md-sys-color-surface-container);
+  display: flex;
+  margin-left: auto;
+  margin-right: 30px;
+  color: $md-sys-color-on-background;
+  padding: 5px;
+  border-radius: 18px;
+  border: 1px solid $border-color;
+
+  input {
+    padding: 5px;
+    background: inherit;
+    color: inherit;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  @media screen and (max-width: 993px) {
+  border-radius: 100px;
+    
+    input {
+      display: none;
+    }
+  .search-icon {
+    color: $md-sys-color-on-surface-variant;
+    user-select: none;
+    font-size: 40px;
+    color: $text-color;
+  }
+  }
+}

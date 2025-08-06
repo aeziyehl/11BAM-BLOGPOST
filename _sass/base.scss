@@ -1,9 +1,10 @@
-html {
+  html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 
   ::selection {
-    @include surface;
+    background: $md-extended-color-SecondColor-color;
+    color: $md-extended-color-SecondColor-on-color;
   }
 }
 
