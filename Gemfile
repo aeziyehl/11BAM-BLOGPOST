@@ -15,7 +15,7 @@ gem 'wdm', '>= 0.1.1' if Gem.win_platform?
 gem 'jekyll-paginate', '~> 1.1'
 gem "webrick", "~> 1.7"
 gem "kramdown-parser-gfm", "~> 1.1"
-gem 'kontent-jekyll', '~> 1.0'
+gem 'jekyll-admin', group: :jekyll_plugins
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima", "~> 2.5"
