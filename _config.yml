@@ -89,6 +89,3 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
-
-jekyll_admin:
-  homepage: "configuration"
