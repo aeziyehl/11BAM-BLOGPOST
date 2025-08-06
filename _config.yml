@@ -1,89 +1,56 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-baseurl: /11BAM-BLOGPOST
-
+---
 title: Bl. Andrew of Montreale
-
-description: "A BLOGPOST to showcase the outputs of BAM Students"
-
-show_descriptions: true # set to true to show descriptions in posts
-show_comments: true # set to true to show comments in posts
-
-
-permalink: /Outputs/:title/
-date_format: "%b %-d, %Y"
-
-Header:
-  header_name_1: Outputs
-  header_link_1: /Outputs/
-
-  header_name_2: Students
-  header_link_2: /Students/
-  
-  header_name_3: About
-  header_link_3: /About/
-
-Footer:
-  show-footer-copyright: true # set to true to show footer copyright
-
-google_analytics: 
-  enabled: true # if false, it disables Google Analytics
-  id:           # fill in your Google Analytics ID    
-
-
-# Pagination
-paginate: true
-paginate: 3
-paginate_path: "/Outputs/page:num/"
-
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
-
-url: 'https://aeziyehl.github.io/'  
-
+timezone: UTC
 collections:
+  posts:
+    title: Posts
+    output: true
   tabs:
+    title: Tabs
     output: true
     sort_by: order
-
+  uploads:
+    title: Uploads
+    output: true
+baseurl: "/11BAM-BLOGPOST"
+description: A BLOGPOST to showcase the outputs of BAM Students
+show_descriptions: true
+show_comments: true
+permalink: "/Outputs/:title/"
+date_format: "%b %-d, %Y"
+Header:
+  header_name_1: Outputs
+  header_link_1: "/Outputs/"
+  header_name_2: Students
+  header_link_2: "/Students/"
+  header_name_3: About
+  header_link_3: "/About/"
+Footer:
+  show-footer-copyright: true
+google_analytics:
+  enabled: true
+  id: 
+paginate: 3
+paginate_path: "/Outputs/page:num/"
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-paginate
+url: https://aeziyehl.github.io/
 exclude:
-  - "*.gem"
-  - "*.gemspec"
-  - bin
-  - README.md
-  - LICENSE
-  - docs
-  - RubyGems
-  - gm_bld
-  - gitignore
-
-  #---------------The options BELLOW are not recommended to be modified------------------#
-
+- "*.gem"
+- "*.gemspec"
+- bin
+- README.md
+- LICENSE
+- docs
+- RubyGems
+- gm_bld
+- gitignore
 kramdown:
   syntax_highlighter: rouge
-  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts:
     css_class: highlight
-    # default_lang: console
     span:
       line_numbers: false
     block:
