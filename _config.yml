@@ -21,21 +21,18 @@ baseurl: /11BAM-BLOGPOST
 
 title: Bl. Andrew of Montreale
 
-Abbreviation: BAM
-Purpose: Blog Post 
-
 description: "A BLOGPOST to showcase the outputs of BAM Students"
 
 show_descriptions: true # set to true to show descriptions in posts
 show_comments: true # set to true to show comments in posts
 
 
-permalink: /Posts/:title/
+permalink: /Outputs/:title/
 date_format: "%b %-d, %Y"
 
 Header:
-  header_name_1: Output
-  header_link_1: /Output/
+  header_name_1: Outputs
+  header_link_1: /Outputs/
 
   header_name_2: Students
   header_link_2: /Students/
@@ -54,7 +51,7 @@ google_analytics:
 # Pagination
 paginate: true
 paginate: 3
-paginate_path: "/post/page:num/"
+paginate_path: "/Outputs/page:num/"
 
 
 plugins:
