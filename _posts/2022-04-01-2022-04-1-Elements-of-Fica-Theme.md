@@ -1,8 +1,10 @@
 ---
+title: Elements Of Fica Theme
+date: 2022-04-01 00:00:00 Z
 layout: post
 site-title: Elements of Fica Theme
 author: Aziel Lance
-modified_date: 2023-04-14
+modified_date: 2023-04-14 00:00:00 Z
 ---
 
 # Paragraph
