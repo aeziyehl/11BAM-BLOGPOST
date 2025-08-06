@@ -1,46 +1,6 @@
 ---
 title: Bl. Andrew of Montreale
-
-description: "A BLOGPOST to showcase the outputs of BAM Students"
-
-show_descriptions: true # set to true to show descriptions in posts
-show_comments: true # set to true to show comments in posts
-
-
-permalink: /Outputs/:title/
-date_format: "%b %-d, %Y"
-
-Header:
-  header_name_1: Outputs
-  header_link_1: /Outputs/
-
-  header_name_2: Students
-  header_link_2: /Students/
-  
-  header_name_3: About
-  header_link_3: /About/
-
-Footer:
-  show-footer-copyright: true # set to true to show footer copyright
-
-google_analytics: 
-  enabled: true # if false, it disables Google Analytics
-  id:           # fill in your Google Analytics ID    
-
-
-# Pagination
-paginate: true
-paginate: 3
-paginate_path: "/Outputs/page:num/"
-
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
-
-url: 'https://aeziyehl.github.io/'  
-
+timezone: UTC
 collections:
   posts:
     title: Posts
@@ -52,9 +12,6 @@ collections:
   uploads:
     title: Uploads
     output: true
-baseurl: "/11BAM-BLOGPOST"
-Abbreviation: BAM
-Purpose: Blog Post
 description: A BLOGPOST to showcase the outputs of BAM Students
 show_descriptions: true
 show_comments: true
@@ -79,6 +36,9 @@ plugins:
 - jekyll-seo-tag
 - jekyll-paginate
 url: https://aeziyehl.github.io/
+baseurl: "/11BAM-BLOGPOST"
+Abbreviation: BAM
+Purpose: Blog Post
 exclude:
 - "*.gem"
 - "*.gemspec"
