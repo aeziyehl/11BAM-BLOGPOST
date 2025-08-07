@@ -14,7 +14,7 @@
 
   .site-nav-clickable-wrapper {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     flex: auto;
   }
 
@@ -69,6 +69,9 @@
     }
   }
 
+  #link-with-hover:hover + .dropdown-content {
+    display: flex;
+  }
   .site-nav-logo {
     display: flex;
     text-transform: none;
@@ -115,6 +118,29 @@
     }
     @media screen and (min-width: $pc-width) {
       margin: 0 auto 0 30px;
+    }
+  }
+  .dropdown-content {
+    background-color: $md-sys-color-surface-container-highest;
+    padding: 4px;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    left: 450px;
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    a {
+      @include animation-fade-in(0.1);
+    }
+
+    &:hover {
+      display: flex;
+    }
+
+    a:first-of-type {
+      display: none;
     }
   }
   .checkbtn {
@@ -196,6 +222,10 @@
     a {
       line-height: 80px;
     }
+    .dropdown-content {
+      position: relative;
+      left: 0;
+    }
   }
 }
 .site-animations-show {
@@ -246,7 +276,6 @@
       box-shadow: 0px 0px 20px 0px #00000052;
       transition: all 300ms ease 0ms;
       border-radius: 15px;
-      width: 50%;
 
       &:hover {
         box-shadow: 0px 0px 0px 0px #00000052;
@@ -291,6 +320,7 @@
 
     .page-header-title {
       @include display-medium;
+      text-shadow: #000000 0px 0px 10px;
       border-top: 8px;
       margin-bottom: 0%;
       color: $md-sys-color-primary;
@@ -300,6 +330,7 @@
     }
 
     .site-banner-description {
+      text-shadow: #000000 0px 0px 10px;
       margin-top: 18px;
       margin-bottom: 0%;
       @include title-medium;
@@ -311,7 +342,7 @@
 
   // For Large Screens
   @media screen and (min-width: $mobile-width) {
-    border-bottom: 100px solid transparent;
+    justify-content: start;
 
     .banner-content {
       > a {
@@ -323,7 +354,13 @@
   @media screen and (min-width: 993px) {
     display: flex;
     margin: 10px 100px 10px 100px;
+    height: 600px;
+    background-image: url("homepage-pic.png");
+    background-repeat: no-repeat;
+    background-size: cover; // Ensures the image covers the element
+    background-position: left; // Keeps the image centered // Optional: makes the background fixed on scroll
     .site-banner-img-container {
+      display: none;
       width: $site-banner-picture-sze_wdth;
 
       > img {
@@ -331,6 +368,7 @@
       }
     }
     .banner-content {
+      display: none;
       margin: 0px;
     }
   }

@@ -12,6 +12,8 @@ window.addEventListener("resize", function () {
     }
   }
 });
+
+
 document.querySelector("#site-nav-check-btn").onclick = function () {
   new Animation("site-animations-show", "site-animations-hide");
   nav_scrim.style.display = "block";

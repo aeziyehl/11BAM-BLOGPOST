@@ -21,8 +21,8 @@ date_format: "%b %-d, %Y"
 Header:
   header_name_1: Outputs
   header_link_1: "/Outputs/"
-  header_name_2: Students
-  header_link_2: "/Students/"
+  header_name_2:  Responsible Team
+  header_link_2: ""
   header_name_3: About
   header_link_3: "/About/"
 Footer:

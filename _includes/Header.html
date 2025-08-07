@@ -22,7 +22,16 @@
           </span>
         </label>
         <a href="{{ site.Header.header_link_1 | relative_url }}">{{site.Header.header_name_1}}</a>
-        <a href="{{ site.Header.header_link_2 | relative_url }}">{{site.Header.header_name_2}}</a>
+        <a id="link-with-hover">
+          {{site.Header.header_name_2}}
+          <div class="dropdown-content" id="nav-dropdown">
+            <a href="#">RT 1</a>
+            <a href="#">RT 2</a>
+            <a href="#">RT 3</a>
+            <a href="#">RT 4</a>
+            <a href="#">RT 5</a>
+          </div>
+        </a>
         <a href="{{ site.Header.header_link_3 | relative_url }}">{{site.Header.header_name_3}}</a>
       </div>
       <search>
