@@ -1,6 +1,6 @@
 ---
-title: About
-permalink: "/about/"
+site-title: About
+permalink: "/About/"
 layout: page
 ---
 

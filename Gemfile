@@ -12,10 +12,8 @@ source "https://rubygems.org"
 gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 gem "jekyll-seo-tag", "~> 2.8.0"
 gem 'wdm', '>= 0.1.1' if Gem.win_platform?
-gem 'jekyll-paginate', '~> 1.1'
 gem "webrick", "~> 1.7"
 gem "kramdown-parser-gfm", "~> 1.1"
-gem 'jekyll-admin', group: :jekyll_plugins
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima", "~> 2.5"
@@ -24,7 +22,8 @@ gem 'jekyll-admin', group: :jekyll_plugins
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-paginate-v2"
+  gem "jekyll-feed"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

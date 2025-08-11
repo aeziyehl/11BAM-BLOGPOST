@@ -1,4 +1,4 @@
-  html {
+html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 
@@ -95,14 +95,27 @@ p {
 }
 
 .post-content {
+  @include secondary;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
   padding: 30px $font-spacing - 5 0 $font-spacing - 5;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
   // flex: 1 0 auto;
   // overflow: hidden;
 
   @media screen and (min-width: 1300px) {
     // margin: 0 auto 0 auto;
     display: grid;
-    grid-template-columns: 1fr 15em;
+    grid-template-columns: 30em 1fr;
+
+    > div {
+      margin-left: 30px;
+    }
   }
 }
 

@@ -1,5 +1,5 @@
 {%- unless page.layout == "home" -%}
-<nav class="site-nav" id="site-navnav">
+<nav class="site-nav" id="site-nav">
   {%- else -%}
   <nav class="header-home-mod site-nav" id="site-nav">
     {%- endunless -%}
@@ -25,11 +25,11 @@
         <a id="link-with-hover">
           {{site.Header.header_name_2}}
           <div class="dropdown-content" id="nav-dropdown">
-            <a href="#">RT 1</a>
-            <a href="#">RT 2</a>
-            <a href="#">RT 3</a>
-            <a href="#">RT 4</a>
-            <a href="#">RT 5</a>
+            <a href="{{ "/Responsible-Team/1" | relative_url }}">RT 1</a>
+            <a href="{{ "/Responsible-Team/2" | relative_url }}">RT 2</a>
+            <a href="{{ "/Responsible-Team/3" | relative_url }}">RT 3</a>
+            <a href="{{ "/Responsible-Team/4" | relative_url }}">RT 4</a>
+            <a href="{{ "/Responsible-Team/5" | relative_url }}">RT 5</a>
           </div>
         </a>
         <a href="{{ site.Header.header_link_3 | relative_url }}">{{site.Header.header_name_3}}</a>
