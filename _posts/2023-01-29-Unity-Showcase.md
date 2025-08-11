@@ -1,10 +1,11 @@
 ---
 title: Unity Showcase
 date: 2023-01-29 00:00:00 Z
-RT: 4
 layout: post
 site-title: Unity Showcase
 author: Zeall
+category: RT3
+pic: assets/img/DEMO.png
 ---
 
 This Pages Showcases the elements of the Theme

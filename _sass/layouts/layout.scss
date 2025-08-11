@@ -250,6 +250,7 @@
 //
 // Header Banner
 //
+
 .header-home-mod {
   @include md-sys-elevation-level2($md-sys-color-surface);
   position: static;
@@ -257,8 +258,9 @@
 .site-banner {
   @include md-sys-elevation-level2($md-sys-color-surface);
   padding: 15px;
-  margin: 15px;
-  border-radius: 50px;
+  margin: 0px 15px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
   color: $text-color;
   text-align: center;
   justify-content: center;
@@ -350,7 +352,7 @@
 
   @media screen and (min-width: 993px) {
     display: flex;
-    margin: 10px 100px 10px 100px;
+    margin: 0px 100px 10px 100px;
     height: 600px;
     background-image: url("homepage-pic.png");
     background-repeat: no-repeat;
@@ -388,7 +390,7 @@
   transform: translateY(3rem);
   animation: 208.898ms linear 0s 1 normal forwards running slide-up;
   animation-delay: 252.00568990042672ms;
-  padding: 30px $font-spacing - 5 0 $font-spacing - 5;
+  padding: 30px 2% 0 2%;
 }
 .post-header {
   margin-bottom: $font-spacing;
@@ -503,15 +505,14 @@
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
   display: grid;
-  grid-template-columns: repeat(3, 3fr);
+  grid-template-columns: repeat(2, 3fr);
   gap: 15px;
-  @media (max-width: $defualt-width) {
+  @media (max-width: 1110px) {
     grid-template-columns: none;
   }
   .post-container {
     display: flex;
     @include md-sys-elevation-level1($md-sys-color-primary);
-    transition: $transition-links;
     border: 2px solid $border-color;
     padding: 12px;
     cursor: pointer;
@@ -528,6 +529,9 @@
     }
   }
   .post {
+    opacity: 1;
+    transform: translateY(0);
+    animation: none;
     .post-meta {
       font-size: $small-font-size;
       color: $text-color;
@@ -815,4 +819,13 @@
   padding-top: 13px;
   border-top: 3px solid $border-color;
   margin: 0px;
+}
+.header-status {
+  margin: 10px 100px 0px 100px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+
+  @media screen and (max-width: 993px) {
+    margin: 10px 15px 0px 15px;
+  }
 }

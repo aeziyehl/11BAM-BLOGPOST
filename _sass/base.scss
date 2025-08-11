@@ -98,7 +98,7 @@ p {
   @include secondary;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
-  padding: 30px $font-spacing - 5 0 $font-spacing - 5;
+  padding: 30px 2% 0 2%;
 
   img {
     max-width: 100%;
@@ -111,7 +111,8 @@ p {
   @media screen and (min-width: 1300px) {
     // margin: 0 auto 0 auto;
     display: grid;
-    grid-template-columns: 30em 1fr;
+    justify-content: space-between;
+    grid-template-columns: 30em 55%;
 
     > div {
       margin-left: 30px;
@@ -124,7 +125,7 @@ p {
   flex: 1 0 auto;
   overflow: hidden;
   opacity: 0;
-  // transform: translateY(3rem);
+  transform: translateY(3rem);
   animation: 208.898ms linear 0s 1 normal forwards running slide-up;
   animation-delay: 252.00568990042672ms;
 }
