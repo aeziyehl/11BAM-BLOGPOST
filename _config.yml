@@ -1,18 +1,19 @@
 ---
 title: Bl. Andrew of Montreale
 timezone: UTC
-
-
-
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 baseurl: "/11BAM-BLOGPOST"
 description: A BLOGPOST to showcase the outputs of BAM Students
-
 show_descriptions: true
 show_comments: true
-
 permalink: "/Outputs/:title/"
 date_format: "%b %-d, %Y"
-
 Header:
   header_name_1: Outputs
   header_link_1: "/Outputs/"
@@ -20,26 +21,18 @@ Header:
   header_link_2: ''
   header_name_3: About
   header_link_3: "/About/"
-
 Footer:
   show-footer-copyright: true
-
 google_analytics:
   enabled: true
   id: 
-
-
 gems:
-  - jekyll-paginate-v2
-
+- jekyll-paginate-v2
 plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-paginate-v2
-
 url: https://aeziyehl.github.io/
-
-
 exclude:
 - "*.gem"
 - "*.gemspec"
@@ -50,9 +43,6 @@ exclude:
 - RubyGems
 - gm_bld
 - gitignore8
-
-
-
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
@@ -62,12 +52,8 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
-
 pagination:
   enabled: true
   per_page: 4
-  permalink: '/Outputs/:num/' # Pages are index.html inside this folder (default)
-
-  # Optional, defines the field that the posts should be sorted on (omit to default to 'date')
-  sort_field: 'date'
-
+  permalink: "/Outputs/:num/"
+  sort_field: date

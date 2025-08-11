@@ -1,6 +1,6 @@
 ---
-site-title: About
 permalink: "/About/"
+site-title: About
 layout: page
 ---
 
