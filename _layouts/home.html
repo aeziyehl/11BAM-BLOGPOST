@@ -49,10 +49,10 @@
           <a class="material-icons-round post-nav-svg disable-svg">
             chevron_left
           </a>
+          {% endif %}
           <span>{{ paginator.page }}
             /
             {{ paginator.total_pages }}</span>
-          {% endif %}
           {%- if paginator.next_page %}
           <a href="{{ paginator.next_page_path | relative_url }}" class="material-icons-round post-nav-svg">
             arrow_forward_ios
