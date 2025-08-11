@@ -18,8 +18,6 @@ Footer:
 google_analytics:
   enabled: true
   id: 
-gems:
-- jekyll-paginate-v2
 plugins:
 - jekyll-feed
 - jekyll-seo-tag

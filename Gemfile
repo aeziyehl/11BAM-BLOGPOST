@@ -12,6 +12,7 @@ source "https://rubygems.org"
 gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 gem "jekyll-seo-tag", "~> 2.8.0"
 gem 'wdm', '>= 0.1.1' if Gem.win_platform?
+gem 'jekyll-paginate-v2', '~> 3.0.0'
 gem "webrick", "~> 1.7"
 gem "kramdown-parser-gfm", "~> 1.1"
 
@@ -22,8 +23,7 @@ gem "kramdown-parser-gfm", "~> 1.1"
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-paginate-v2"
-  gem "jekyll-feed"
+  gem "jekyll-feed", "~> 0.12"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
