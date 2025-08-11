@@ -1,13 +1,5 @@
 ---
 title: Bl. Andrew of Montreale
-timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
 baseurl: "/11BAM-BLOGPOST"
 description: A BLOGPOST to showcase the outputs of BAM Students
 show_descriptions: true
@@ -55,5 +47,5 @@ kramdown:
 pagination:
   enabled: true
   per_page: 4
-  permalink: "/Outputs/:num/"
-  sort_field: date
+  permalink: '/Outputs/:num/'
+  sort_field: 'date'
