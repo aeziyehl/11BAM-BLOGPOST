@@ -1,9 +1,12 @@
 ---
+title: Philosophy Reflection copy 4
+date: 2025-08-11 00:00:00 Z
+categories:
+- RT2
 RT: 2
 layout: post
 site-title: Philosophy Reflection
 author: Gian Ethan G. Aton
-category: RT2
 pic: assets/img/RT2/Aton-Poster.jpg
 ---
 

@@ -1,9 +1,12 @@
 ---
+title: Healing A Severed String
+date: 2025-08-11 00:00:00 Z
+categories:
+- RT1
 RT: 1
 layout: post
 site-title: Healing a Severed String
 author: Carrie Suzzane N. Reoma
-category: RT1
 pic: assets/img/RT1/Reoma-Poster.jpg
 ---
 

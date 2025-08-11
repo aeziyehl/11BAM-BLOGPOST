@@ -1,9 +1,12 @@
 ---
+title: A Hand That Lifts Beyond The Thorns
+date: 2025-08-11 00:00:00 Z
+categories:
+- RT1
 RT: 1
 layout: post
 site-title: A-Hand-That-Lifts-Beyond-the-Thorns
 author: Samantha Ysabelle J. Anog
-category: RT1
 pic: assets/img/RT1/Anog-Poster.jpg
 ---
 

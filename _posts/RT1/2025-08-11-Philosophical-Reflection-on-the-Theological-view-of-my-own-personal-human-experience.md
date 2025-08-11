@@ -1,9 +1,13 @@
 ---
+title: Philosophical Reflection On The Theological View Of My Own Personal Human Experience
+date: 2025-08-11 00:00:00 Z
+categories:
+- RT1
 RT: 1
 layout: post
-site-title: Philosophical Reflection on the Theological view of my own personal human experience
+site-title: Philosophical Reflection on the Theological view of my own personal human
+  experience
 author: Lex Adrien C. Abellanosa
-category: RT1
 pic: assets/img/RT1/Abellanosa-Poster.jpg
 ---
 

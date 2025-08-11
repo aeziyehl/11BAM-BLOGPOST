@@ -1,8 +1,8 @@
 ---
+permalink: "/Output/RT3"
 layout: post_list
 site-title: RT 3
-permalink: /Output/RT3
-pagination: 
+pagination:
   enabled: true
   category: RT3
 ---

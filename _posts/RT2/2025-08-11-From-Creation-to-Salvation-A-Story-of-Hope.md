@@ -1,9 +1,12 @@
 ---
+title: From Creation To Salvation A Story Of Hope
+date: 2025-08-11 00:00:00 Z
+categories:
+- RT2
 RT: 2
 layout: post
 site-title: From Creation to Salvation; A Story of Hope
 author: Mark Ezekiel D. Camay
-category: RT2
 pic: assets/img/RT2/Camay-Poster.jpg
 ---
 

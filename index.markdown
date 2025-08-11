@@ -1,7 +1,7 @@
 ---
 layout: home
 home: true
-pagination: 
+pagination:
   enabled: true
 ---
 

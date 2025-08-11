@@ -1,9 +1,12 @@
 ---
+title: Finding Hope And Redemption A Journey Back To God
+date: 2025-08-11 00:00:00 Z
+categories:
+- RT1
 RT: 1
 layout: post
 site-title: Finding-Hope-and-Redemption-A-Journey-Back-to-God
 author: Brent Raphael B. Bacalso
-category: RT1
 pic: assets/img/RT1/Bacalso-Poster.jpg
 ---
 

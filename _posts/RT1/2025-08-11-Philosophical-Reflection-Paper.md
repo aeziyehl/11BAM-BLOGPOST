@@ -1,9 +1,12 @@
 ---
+title: Philosophical Reflection Paper
+date: 2025-08-11 00:00:00 Z
+categories:
+- RT1
 RT: 1
 layout: post
 site-title: Philosophical Reflection Paper
 author: Archie S. Espina
-category: RT1
 pic: assets/img/RT1/Espina-Poster.jpg
 ---
 
