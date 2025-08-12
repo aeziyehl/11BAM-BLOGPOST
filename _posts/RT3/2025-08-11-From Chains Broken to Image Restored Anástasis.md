@@ -10,7 +10,6 @@ author: Ian Ezekiel S. Pangilinan
 pic: assets/img/RT3/Pangilinan-Poster.jpg
 ---
 
-
 As I look at my Imago Dei poster, I recognize that it is more than just art, I see my own story. On the left side, there are chains and cracks of sins, and it reminds me of a time I was in chains to my pride and anger. It happened when someone I really trusted betrayed me. My first reaction was to cut them off completely and convince myself I was just “protecting my own peace.” I thought my anger was justified and that staying mad somehow made me stronger.
 
 Looking back, I realize that I was only focusing on the partial perspective of it. I saw myself as the victim and them as the villain. I didn’t notice how holding on to resentment was changing me, it was making me less patient, less compassionate, and honestly, less happy. I was letting my hurt and anger control my life instead of remembering who I am. I almost forgot that I am a person that is made in God’s image.

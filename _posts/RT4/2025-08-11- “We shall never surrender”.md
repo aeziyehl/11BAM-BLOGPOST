@@ -1,11 +1,11 @@
 ---
-title: “We shall never surrender”
+title: "“We shall never surrender”"
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT4
 RT: 4
 layout: post
-site-title: “We shall never surrender”
+site-title: "“We shall never surrender”"
 author: Aziel Lance S. Suarez
 pic: assets/img/RT4/Suarez-Poster.jpg
 ---

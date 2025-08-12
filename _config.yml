@@ -53,6 +53,6 @@ kramdown:
 pagination:
   enabled: true
   per_page: 4
-  title: ':title'
+  title: ":title"
   permalink: "/Outputs/:num/"
   sort_field: date

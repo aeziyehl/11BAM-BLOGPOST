@@ -1,14 +1,15 @@
 ---
-title: IMAGO DEI A Journey of the Human Soul 
+title: IMAGO DEI A Journey of the Human Soul
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT3
 RT: 3
 layout: post
-site-title: IMAGO DEI A Journey of the Human Soul 
+site-title: IMAGO DEI A Journey of the Human Soul
 author: Daniel R. Limalima
 pic: assets/img/RT3/Limalima-Poster.jpg
 ---
+
 I see my own story in my "Imago Dei" poster. Life is a journey of finding out who you are, and my poster shows this. It goes from a whole person at the top to a broken one in the middle, and then to a restored one at the bottom. This paper is about one part of my life that matches that journey. I'll explain how I went from a limited view to a full one, and from what I thought was true to what was actually true. This helped me get a clearer picture of my life's purpose.
 
 My poster shows a glowing light inside a person's chest. This reminds me that I was created by God with dignity and purpose. But there's also a crack in the middle, and that represents the time I felt completely overwhelmed. I was carrying too many burdens at once. The pressure was so much that I thought I couldn't handle it. This moment pushed me past my normal limits. It made me see that I was more than just a body. It showed me my potential to rise above situations and find strength I didn't know I had.

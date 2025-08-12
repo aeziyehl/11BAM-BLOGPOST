@@ -6,7 +6,7 @@ categories:
 RT: 5
 layout: post
 site-title: Breakthrough a Bounded Soul Driven by a Narrow Mind
-author:  Samantha Nicole O. Parsacala
+author: Samantha Nicole O. Parsacala
 pic: assets/img/RT5/Parsacala-Poster.jpg
 ---
 

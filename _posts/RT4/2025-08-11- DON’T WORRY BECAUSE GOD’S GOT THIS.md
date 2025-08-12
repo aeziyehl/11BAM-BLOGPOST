@@ -1,11 +1,11 @@
 ---
-title: DON’T WORRY BECAUSE GOD’S GOT THIS 
+title: DON’T WORRY BECAUSE GOD’S GOT THIS
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT4
 RT: 4
 layout: post
-site-title: DON’T WORRY BECAUSE GOD’S GOT THIS 
+site-title: DON’T WORRY BECAUSE GOD’S GOT THIS
 author: Nino Adrian P. Atillo
 pic: assets/img/RT4/Atillo-Poster.jpg
 ---

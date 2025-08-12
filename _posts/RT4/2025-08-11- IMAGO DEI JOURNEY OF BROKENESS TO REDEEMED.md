@@ -6,7 +6,7 @@ categories:
 RT: 4
 layout: post
 site-title: IMAGO DEI JOURNEY OF BROKENESS TO REDEEMED
-author: Naverick L. Cabarse 
+author: Naverick L. Cabarse
 pic: assets/img/RT4/Cabarse-Poster.jpg
 ---
 

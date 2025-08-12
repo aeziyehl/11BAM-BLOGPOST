@@ -6,7 +6,7 @@ categories:
 RT: 4
 layout: post
 site-title: A Journey in Four Parts Creation, Fall, Redemption, and Hope
-author:  Carlisle I. Sevilla
+author: Carlisle I. Sevilla
 pic: assets/img/RT4/Sevilla-Poster.jpg
 ---
 
