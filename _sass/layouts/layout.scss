@@ -433,6 +433,8 @@
   margin: 0px;
 }
 .post-meta {
+  padding-top: 14px;
+  @include title-medium;
   span {
     font-weight: 800;
   }
