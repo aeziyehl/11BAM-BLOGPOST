@@ -518,7 +518,7 @@
     cursor: pointer;
     border-radius: 12px;
     img {
-      width: 50%;
+      width: 40%;
       border-radius: 12px;
     }
     a {
@@ -532,13 +532,14 @@
     opacity: 1;
     transform: translateY(0);
     animation: none;
+    display: flex;
+    flex-direction: column;
     .post-meta {
-      font-size: $small-font-size;
-      color: $text-color;
-      word-spacing: 1px;
+      padding: 8px 0px 8px 0px;
+      @include label-medium;
     }
     .post-header {
-      @include headline-large;
+      @include title-large;
       margin: 12px 0px 0px 0px;
     }
     .post-info {
@@ -610,6 +611,8 @@
     }
   }
   .post-descriptions {
+    @include body-medium;
+    margin-top: 10%;
     p {
       //  Make the description shorter
       margin: 0;
@@ -627,7 +630,6 @@
     h5,
     h6,
     a {
-      @include body-medium;
       a[href^="#"] {
         display: none;
       }
@@ -651,6 +653,14 @@
   gap: 4px;
   margin-right: auto;
   padding-left: 8px;
+}
+.post-status-info {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 993px) {
+    flex-direction: column;
+  }
 }
 //
 // Site footer

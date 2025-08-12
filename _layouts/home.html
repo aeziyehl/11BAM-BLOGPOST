@@ -38,31 +38,35 @@
 
       {%- if posts.size > 0 -%}
       <div class="post-status-list post-status">
-        <p>OUTPUTS</p>
 
-        <div class="post-status-list-paginator">
-          {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path | relative_url }}" class="material-icons-round post-nav-svg">
-            arrow_back_ios
-          </a>
-          {% else %}
-          <a class="material-icons-round post-nav-svg disable-svg">
-            chevron_left
-          </a>
-          {% endif %}
-          <span>{{ paginator.page }}
-            /
-            {{ paginator.total_pages }}</span>
-          {%- if paginator.next_page %}
-          <a href="{{ paginator.next_page_path | relative_url }}" class="material-icons-round post-nav-svg">
-            arrow_forward_ios
-          </a>
-          {%- else %}
-          <a class="material-icons-round post-nav-svg disable-svg">
-            chevron_right
-          </a>
-          {%- endif %}
+        <div class="post-status-info">
+          <p>OUTPUTS</p>
+
+          <div class="post-status-list-paginator">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | relative_url }}" class="material-icons-round post-nav-svg">
+              arrow_back_ios
+            </a>
+            {% else %}
+            <a class="material-icons-round post-nav-svg disable-svg">
+              chevron_left
+            </a>
+            {% endif %}
+            <span>{{ paginator.page }}
+              /
+              {{ paginator.total_pages }}</span>
+            {%- if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | relative_url }}" class="material-icons-round post-nav-svg">
+              arrow_forward_ios
+            </a>
+            {%- else %}
+            <a class="material-icons-round post-nav-svg disable-svg">
+              chevron_right
+            </a>
+            {%- endif %}
+          </div>
         </div>
+
         <div class="post-status-control">
           <span class="material-icons-round control">
             minimize
@@ -83,7 +87,9 @@
             <p class="post-header">
               {{ post.title | escape }}
             </p>
-            <div class="post-info">
+            <div class="post-meta">
+              By
+              <span itemprop="name">{{ post.author }}</span>
             </div>
             <div class="post-descriptions">
               {%- if site.show_descriptions -%}

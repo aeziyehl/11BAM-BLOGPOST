@@ -96,26 +96,36 @@ p {
 
 .post-content {
   @include secondary;
+  display: flex;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
   padding: 30px 2% 0 2%;
 
+  div > p {
+    text-align: justify;
+    text-indent: 10%;
+  }
+
   img {
-    max-width: 100%;
-    height: auto;
+    max-width: 50%;
+    height: 50%;
     border-radius: 12px;
   }
-  // flex: 1 0 auto;
-  // overflow: hidden;
 
-  @media screen and (min-width: 1300px) {
-    // margin: 0 auto 0 auto;
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 30em 55%;
+  > div {
+    margin-left: 30px;
+  }
 
-    > div {
-      margin-left: 30px;
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+
+    img {
+      max-width: 70%;
+      height: 70%;
+      border-radius: 12px;
+    }
+    div {
+      margin: 0px;
     }
   }
 }

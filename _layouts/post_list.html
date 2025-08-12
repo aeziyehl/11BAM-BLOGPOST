@@ -21,8 +21,8 @@
                 </a>
                 {% else %}
                 <a class="material-icons-round post-nav-svg disable-svg">
-                    chevron_left   
-                </a> 
+                    chevron_left
+                </a>
                 {% endif %}
                 <span>{{ paginator.page }}
                     /
@@ -57,8 +57,11 @@
                     <p class="post-header">
                         {{ post.title | escape }}
                     </p>
-                    <div class="post-info">
+                    <div class="post-meta">
+                        By
+                        <span itemprop="name">{{ post.author }}</span>
                     </div>
+
                     <div class="post-descriptions">
                         {%- if site.show_descriptions -%}
                         {{ post.excerpt }}
