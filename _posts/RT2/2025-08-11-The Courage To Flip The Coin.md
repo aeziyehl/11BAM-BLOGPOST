@@ -8,7 +8,7 @@ layout: post
 site-title: The Courage To Flip The Coin
 author: Yuriel Rave A. Manayon
 pic: assets/img/RT2/Manayon-Poster.jpg
--
+---
 There exists a quiet hum of potential within each of us, a reservoir of strength that
 often remains untapped, shrouded by the persistent whispers of self-doubt. For a
 long time, I was intimately familiar with these whispers. Opportunities, when they
