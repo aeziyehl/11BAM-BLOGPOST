@@ -3,6 +3,7 @@ title: The Journey to Wholeness Balancing Mind, Body, and Soul
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT5
+- reflection-paper
 RT: 5
 layout: post
 site-title: A Reflection on Living with Faith, Diversity, Knowledge, Love, and Hope

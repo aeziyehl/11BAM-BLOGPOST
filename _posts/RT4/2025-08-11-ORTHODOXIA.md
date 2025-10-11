@@ -3,6 +3,7 @@ title: ORTHODOXIA
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT4
+- reflection-paper
 RT: 4
 layout: post
 site-title: ORTHODOXIA

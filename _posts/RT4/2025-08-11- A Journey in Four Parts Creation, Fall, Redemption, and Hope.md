@@ -3,6 +3,7 @@ title: A Journey in Four Parts Creation, Fall, Redemption, and Hope
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT4
+- reflection-paper
 RT: 4
 layout: post
 site-title: A Journey in Four Parts Creation, Fall, Redemption, and Hope

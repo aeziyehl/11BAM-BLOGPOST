@@ -1,5 +1,5 @@
 ---
-permalink: "/Output/RT4"
+permalink: "/Outputs/RT4"
 layout: post_list
 site-title: RT 4
 pagination:

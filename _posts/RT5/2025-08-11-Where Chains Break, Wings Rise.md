@@ -3,6 +3,7 @@ title: Where Chains Break, Wings Rise
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT5
+- reflection-paper
 RT: 5
 layout: post
 site-title: Where Chains Break, Wings Rise

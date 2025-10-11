@@ -3,6 +3,7 @@ title: Finding God's Image Through Art
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT2
+- reflection-paper
 RT: 2
 layout: post
 site-title: Finding God's Image Through Art

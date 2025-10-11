@@ -3,6 +3,7 @@ title: Philosophical Reflection On The Theological View Of My Own Personal Human
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT1
+- reflection-paper
 RT: 1
 layout: post
 site-title: Philosophical Reflection on the Theological view of my own personal human

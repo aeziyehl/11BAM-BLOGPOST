@@ -3,6 +3,7 @@ title: The Illusion of Perfection A Journey to Self-Acceptance
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT5
+- reflection-paper
 RT: 5
 layout: post
 site-title: The Illusion of Perfection A Journey to Self-Acceptance

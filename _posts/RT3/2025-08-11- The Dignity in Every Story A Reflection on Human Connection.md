@@ -3,6 +3,7 @@ title: The Dignity in Every Story A Reflection on Human Connection
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT3
+- reflection-paper
 RT: 3
 layout: post
 site-title: The Dignity in Every Story A Reflection on Human Connection

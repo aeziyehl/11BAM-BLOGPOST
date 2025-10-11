@@ -4,8 +4,9 @@
 
 <body>
   {%- include Header.html -%}
-  <div class="header-status post-status">
-    <div class="post-status-control">
+  <div class="header-status outputs-status">
+    <p>C:/Users/BAM/</p>
+    <div class="outputs-status-control">
       <span class="material-icons-round control">
         minimize
       </span>
@@ -30,79 +31,28 @@
     </div>
   </header>
 
-  <main class="content" style="display: flex;">
-    <div class="" style="padding: 18px">
-
-      {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-      {%- assign posts = paginator.posts -%}
-
-      {%- if posts.size > 0 -%}
-      <div class="post-status-list post-status">
-
-        <div class="post-status-info">
-          <p>OUTPUTS</p>
-
-          <div class="post-status-list-paginator">
-            {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | relative_url }}" class="material-icons-round post-nav-svg">
-              arrow_back_ios
-            </a>
-            {% else %}
-            <a class="material-icons-round post-nav-svg disable-svg">
-              chevron_left
-            </a>
-            {% endif %}
-            <span>{{ paginator.page }}
-              /
-              {{ paginator.total_pages }}</span>
-            {%- if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | relative_url }}" class="material-icons-round post-nav-svg">
-              arrow_forward_ios
-            </a>
-            {%- else %}
-            <a class="material-icons-round post-nav-svg disable-svg">
-              chevron_right
-            </a>
-            {%- endif %}
-          </div>
-        </div>
-
-        <div class="post-status-control">
-          <span class="material-icons-round control">
-            minimize
-          </span>
-          <span class="material-icons-round control">
-            crop_square
-          </span>
-          <span class="material-icons-round control">
-            close
-          </span>
-        </div>
+   <main class="content" style="padding: 18px">
+    <div class="outputs-status">
+      <p>C:/Users/BAM/Documents/Outputs</p>
+      <div class="outputs-status-control">
+        <span class="material-icons-round control"> minimize </span>
+        <span class="material-icons-round control"> crop_square </span>
+        <span class="material-icons-round control"> close </span>
       </div>
-      <div class="post-list">
-        {%- for post in posts -%}
-        <div class="post-container">
-          <img src="{{ post.pic | relative_url }}">
-          <a class="post" href="{{ post.url | relative_url }}">
-            <p class="post-header">
-              {{ post.title | escape }}
-            </p>
-            <div class="post-meta">
-              By
-              <span itemprop="name">{{ post.author }}</span>
-            </div>
-            <div class="post-descriptions">
-              {%- if site.show_descriptions -%}
-              {{ post.excerpt }}
-              {%- endif -%}
-            </div>
-          </a>
-        </div>
-        {%- endfor -%}
-      </div>
-      {%- endif -%}
+    </div>
+    <div class="output-container">
+      <a class="output-folder" href="{{ '/Outputs/reflection-paper' | relative_url }}">
+        <span class="material-icons-round output-folder-icon"> folder </span>
+        <p class="output-folder-name">Reflection Paper</p>
+      </a>
+
+      <a class="output-folder" href="{{ '/Output/Editorial-Articles' | relative_url }}">
+        <span class="material-icons-round output-folder-icon"> folder </span>
+        <p class="output-folder-name">Editorial Article</p>
+      </a>
     </div>
   </main>
+
   {%- include assets/BTT.html-%}
   {%- include Footer.html-%}
 </body>

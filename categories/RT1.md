@@ -1,5 +1,5 @@
 ---
-permalink: "/Output/RT1"
+permalink: "/Outputs/RT1"
 layout: post_list
 site-title: RT 1
 pagination:

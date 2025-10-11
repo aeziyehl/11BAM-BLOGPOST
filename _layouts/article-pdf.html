@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+{%- include Head.html-%}
+
+<body>
+  {%- include Header.html-%}
+  <article class="post">
+    <div class="outputs-status">
+      <p>Editorial Article</p>
+
+      <div class="outputs-status-control">
+        <span class="material-icons-round control">
+          minimize
+        </span>
+        <span class="material-icons-round control">
+          crop_square
+        </span>
+        <span class="material-icons-round control">
+          close
+        </span>
+      </div>
+    </div>
+    <main class="outputs-content " style="padding: 0px; display: block;">
+      <embed src="{{ page.pdf-file | relative_url }}" type="application/pdf" style="width: 100%; height: 100vh;" />
+    </main>
+  </article>
+  {%- include assets/BTT.html-%} 
+  {%- include Footer.html-%} 
+</body>
+
+</html>

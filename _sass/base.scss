@@ -1,3 +1,11 @@
+@use "colors/dark-theme/theme-dark" as *;
+
+@use "layouts/variable" as *;
+@use "layouts/typography" as *;
+
+@use "Material/colors" as *;
+@use "Material/palette" as *;
+
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -94,9 +102,10 @@ p {
   max-width: 1168px;
 }
 
-.post-content {
+.outputs-content {
   @include secondary;
-  display: flex;
+  display: grid;
+  grid-template-columns: 80vh 1fr;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
   padding: 30px 2% 0 2%;
@@ -107,8 +116,6 @@ p {
   }
 
   img {
-    max-width: 50%;
-    height: 50%;
     border-radius: 12px;
   }
 
@@ -116,9 +123,8 @@ p {
     margin-left: 30px;
   }
 
-  @media screen and (max-width: 1300px) {
-    flex-direction: column;
-
+  @media screen and (max-width: 1000px) {
+    display: block;
     img {
       max-width: 70%;
       height: 70%;

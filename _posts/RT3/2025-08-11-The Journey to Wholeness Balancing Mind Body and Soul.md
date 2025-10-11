@@ -3,6 +3,7 @@ title: The Journey to Wholeness Balancing Mind, Body, and Soul
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT3
+- reflection-paper
 RT: 3
 layout: post
 site-title: The Journey to Wholeness Balancing Mind, Body, and Soul

@@ -3,6 +3,7 @@ title: Walking the Uphill Path
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT2
+- reflection-paper
 RT: 2
 layout: post
 site-title: Walking the Uphill Path

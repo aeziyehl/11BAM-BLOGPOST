@@ -3,6 +3,7 @@ title: From Chains to Wings, From Striving to Trust
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT3
+- reflection-paper
 RT: 3
 layout: post
 site-title: From Chains to Wings, From Striving to Trust

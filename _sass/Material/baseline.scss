@@ -1,1 +1,3 @@
-@import "palette", "colors",  "motion";
+@use "palette" as *;
+@use "colors" as *;
+@use "motion" as *;

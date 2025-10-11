@@ -4,7 +4,7 @@ baseurl: "/11BAM-BLOGPOST"
 description: A BLOGPOST to showcase the outputs of BAM Students
 show_descriptions: true
 show_comments: true
-permalink: "/Outputs/:title/"
+permalink: "/Output/:title/"
 date_format: "%b %-d, %Y"
 Header:
   header_name_1: Outputs
@@ -13,6 +13,8 @@ Header:
   header_link_2: ''
   header_name_3: About
   header_link_3: "/About/"
+  header_name_4: 'Articles'
+  header_link_4: '/Output/Editorial-Articles'
 Footer:
   show-footer-copyright: true
 google_analytics:
@@ -46,5 +48,5 @@ pagination:
   enabled: true
   per_page: 4
   title: ":title"
-  permalink: "/Outputs/:num/"
-  sort_field: date
+  permalink: "/:num/"
+  sort_field: 'author'

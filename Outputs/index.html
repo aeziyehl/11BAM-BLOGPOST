@@ -1,7 +1,32 @@
 ---
-layout: post_list
 site-title: OUTPUTS
-pagination:
-  enabled: true
 ---
 
+<!DOCTYPE html>
+<html lang="en">
+  {%- include Head.html -%} {%- include Header.html -%}
+
+  <main class="content" style="padding: 18px">
+    <div class="outputs-status">
+      <p>C:/Users/BAM/Documents/Outputs</p>
+      <div class="outputs-status-control">
+        <span class="material-icons-round control"> minimize </span>
+        <span class="material-icons-round control"> crop_square </span>
+        <span class="material-icons-round control"> close </span>
+      </div>
+    </div>
+    <div class="output-container">
+      <a class="output-folder" href="{{ '/Outputs/reflection-paper' | relative_url }}">
+        <span class="material-icons-round output-folder-icon"> folder </span>
+        <p class="output-folder-name">Reflection Paper</p>
+      </a>
+
+      <a class="output-folder" href="{{ '/Output/Editorial-Articles' | relative_url }}">
+        <span class="material-icons-round output-folder-icon"> folder </span>
+        <p class="output-folder-name">Editorial Article</p>
+      </a>
+    </div>
+  </main>
+
+  {%- include Footer.html -%} {%- include assets/BTT.html -%}
+</html>

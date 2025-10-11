@@ -1,3 +1,13 @@
+@use "layouts/variable" as *;
+
+@use "Material/palette" as *;
+@use "Material/colors" as *;
+@use "Material/motion" as *;
+
+@use "colors/dark-theme/theme-dark" as *;
+@use "layouts/Google-fonts" as *;
+@use "layouts/typography.scss" as *;
+
 //
 // Prompts
 //
@@ -138,7 +148,7 @@ table {
   animation-name: BTT-Exit;
 }
 
-.post-nav {
+.outputs-nav {
   padding-top: 5px;
   display: inline;
   list-style: none;
@@ -154,7 +164,7 @@ table {
   }
 }
 
-.post-nav-svg {
+.outputs-nav-svg {
   @include md-sys-elevation-level1($md-sys-color-secondary-fixed);
   color: $md-sys-color-on-secondary-fixed;
   padding: 8px;
@@ -171,7 +181,7 @@ table {
   color: $md-sys-color-on-tertiary-fixed;
 }
 
-.post-nav-num {
+.outputs-nav-num {
   user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -185,7 +195,7 @@ table {
 //
 // Post footer
 //
-.post-footer {
+.outputs-footer {
   padding-top: 13px;
   border-top: 3px solid $border-color;
   margin: 0px;
@@ -194,7 +204,7 @@ table {
 //
 // Table Of Contents(Toc)
 //
-.post-toc {
+.outputs-toc {
   position: sticky;
   top: 2rem;
   border-left: 1px solid $md-sys-color-outline;

@@ -3,6 +3,7 @@ title: Breakthrough a Bounded Soul Driven by a Narrow Mind
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT5
+- reflection-paper
 RT: 5
 layout: post
 site-title: Breakthrough a Bounded Soul Driven by a Narrow Mind

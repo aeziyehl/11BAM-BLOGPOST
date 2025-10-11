@@ -3,6 +3,7 @@ title: Philosophical Reflection Paper
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT1
+- reflection-paper
 RT: 1
 layout: post
 site-title: Philosophical Reflection Paper

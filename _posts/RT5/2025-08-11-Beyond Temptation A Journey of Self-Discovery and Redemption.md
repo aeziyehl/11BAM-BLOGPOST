@@ -3,6 +3,7 @@ title: Beyond Temptation A Journey of Self-Discovery and Redemption
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT5
+- reflection-paper
 RT: 5
 layout: post
 site-title: Beyond Temptation A Journey of Self-Discovery and Redemption

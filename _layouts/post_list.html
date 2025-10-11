@@ -7,20 +7,22 @@
 
     <main class="content" style="padding: 18px">
 
+        {% include assets/anchor-headings.html html=content anchorBody="#" %}
+
         {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
         {%- assign posts = paginator.posts -%}
 
         {%- if posts.size > 0 -%}
-        <div class="post-status-list post-status">
+        <div class="outputs-status-list outputs-status">
             <p>{{ page.site-title }}</p>
 
-            <div class="post-status-list-paginator">
+            <div class="outputs-status-list-paginator">
                 {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path | relative_url }}" class="material-icons-round post-nav-svg">
+                <a href="{{ paginator.previous_page_path | relative_url }}" class="material-icons-round outputs-nav-svg">
                     arrow_back_ios
                 </a>
                 {% else %}
-                <a class="material-icons-round post-nav-svg disable-svg">
+                <a class="material-icons-round outputs-nav-svg disable-svg">
                     chevron_left
                 </a>
                 {% endif %}
@@ -28,16 +30,16 @@
                     /
                     {{ paginator.total_pages }}</span>
                 {%- if paginator.next_page %}
-                <a href="{{ paginator.next_page_path | relative_url }}" class="material-icons-round post-nav-svg">
+                <a href="{{ paginator.next_page_path | relative_url }}" class="material-icons-round outputs-nav-svg">
                     arrow_forward_ios
                 </a>
                 {%- else %}
-                <a class="material-icons-round post-nav-svg disable-svg">
+                <a class="material-icons-round outputs-nav-svg disable-svg">
                     chevron_right
                 </a>
                 {%- endif %}
             </div>
-            <div class="post-status-control">
+            <div class="outputs-status-control">
                 <span class="material-icons-round control">
                     minimize
                 </span>
@@ -49,20 +51,22 @@
                 </span>
             </div>
         </div>
-        <div class="post-list">
+        <div class="outputs-list">
             {%- for post in posts -%}
-            <div class="post-container">
+            <div class="outputs-container">
+                {%- if post.pic != null -%}
                 <img src="{{ post.pic | relative_url }}">
+                {%- endif -%}
                 <a class="post" href="{{ post.url | relative_url }}">
-                    <p class="post-header">
+                    <p class="outputs-header">
                         {{ post.title | escape }}
                     </p>
-                    <div class="post-meta">
+                    <div class="outputs-meta">
                         By
                         <span itemprop="name">{{ post.author }}</span>
                     </div>
 
-                    <div class="post-descriptions">
+                    <div class="outputs-descriptions">
                         {%- if site.show_descriptions -%}
                         {{ post.excerpt }}
                         {%- endif -%}

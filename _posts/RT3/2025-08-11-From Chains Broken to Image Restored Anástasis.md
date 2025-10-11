@@ -3,6 +3,7 @@ title: From Chains Broken to Image Restored Anástasis
 date: 2025-08-11 00:00:00 Z
 categories:
 - RT3
+- reflection-paper
 RT: 3
 layout: post
 site-title: From Chains Broken to Image Restored Anástasis
