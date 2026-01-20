@@ -4,9 +4,9 @@
 
 <body>
   {%- include Header.html-%}
-  <article class="post">
+  <article class="window">
     <div class="window-title-bar">
-      <p>RT {{ page.RT | escape }} / {{ page.author }}</p>
+      <p>C:/Users/BAM/Outputs/{{ page.title }}</p>
 
       <div class="window-title-bar-control">
         <span class="material-icons-round control">
@@ -20,8 +20,7 @@
         </span>
       </div>
     </div>
-    <main class="outputs-content">
-      <img src="{{ page.pic | relative_url }}">
+    <main class="article-wrapper">
       <div>
         <header class="outputs-header">
           <h1 class="outputs-title">{{ page.title | escape }}</h1>

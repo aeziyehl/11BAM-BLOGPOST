@@ -1,4 +1,5 @@
 @use "Material/palette" as *;
+@use "sass:color";
 //  Copyright 2016 Google Inc. All rights reserved.
 
 //  Licensed under the Apache License, Version 2.0 (the "License";
@@ -67,7 +68,7 @@
 }
 @mixin surface {
   color: $md-sys-color-on-surface;
-  background-color: mix($md-sys-color-surface, $md-sys-color-primary, 90%);
+  background-color: color.mix($md-sys-color-surface, $md-sys-color-primary, 90%);
 }
 @mixin surface-variant {
   color: $md-sys-color-on-surface-variant;
@@ -86,7 +87,7 @@
 }
 @mixin on-inverse-surface {
   color: $md-sys-color-inverse-surface;
-  background-color: $md-sys-color-on-inverse-surface;
+  background-color: $md-sys-color-inverse-on-surface;
 }
 @mixin inverse-primary {
   color: $md-sys-color-on-inverse-primary;

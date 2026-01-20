@@ -1,60 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-{%- include Head.html-%}
+  {%- include Head.html-%}
 
-<body>
-  {%- include Header.html -%}
-  <div class="header-status outputs-status">
-    <p>C:/Users/BAM/</p>
-    <div class="outputs-status-control">
-      <span class="material-icons-round control">
-        minimize
-      </span>
-      <span class="material-icons-round control">
-        crop_square
-      </span>
-      <span class="material-icons-round control">
-        close
-      </span>
-    </div>
-  </div>
-  <header class="site-banner" role="banner">
-    <div class="banner-content" id="banner-content">
-      <p class="page-header-title">Blessed</p>
-      <p class="page-header-title">Andrew of</p>
-      <p class="page-header-title">Montreale</p>
-      <!-- <p class="site-banner-description">{{site.description}}</p> -->
-      <!-- <a href="{{ site.Header.header_link_2 | relative_url }}">{{site.Header.header_name_2}}</a> -->
-    </div>
-    <div class="site-banner-img-container">
-      <img src="{{site.baseurl}}/assets/img/homepage-pic.png">
-    </div>
-  </header>
+  <body>
+    {%- include Header.html -%}
 
-   <main class="content" style="padding: 18px">
-    <div class="outputs-status">
-      <p>C:/Users/BAM/Documents/Outputs</p>
-      <div class="outputs-status-control">
-        <span class="material-icons-round control"> minimize </span>
-        <span class="material-icons-round control"> crop_square </span>
-        <span class="material-icons-round control"> close </span>
+    <div class="window">
+      <div class="window-title-bar">
+        <p>C:/Users/BAM</p>
+        <div class="window-title-bar-control">
+          <span class="material-icons-round control"> minimize </span>
+          <span class="material-icons-round control"> crop_square </span>
+          <span class="material-icons-round control"> close </span>
+        </div>
       </div>
-    </div>
-    <div class="output-container">
-      <a class="output-folder" href="{{ '/Outputs/reflection-paper' | relative_url }}">
-        <span class="material-icons-round output-folder-icon"> folder </span>
-        <p class="output-folder-name">Reflection Paper</p>
-      </a>
+        <header class="site-banner" role="banner">
+          <div class="banner-content" id="banner-content">
+            <p class="page-header-title">Blessed</p>
+            <p class="page-header-title">Andrew of</p>
+            <p class="page-header-title">Montreale</p>
+            <!-- <p class="site-banner-description">{{site.description}}</p> -->
+            <!-- <a href="{{ site.Header.header_link_2 | relative_url }}">{{site.Header.header_name_2}}</a> -->
+          </div>
+          <div class="site-banner-img-container">
+            <img src="{{site.baseurl}}/assets/img/homepage-pic.png" />
+          </div>
+        </header>
+      </div>
+      <!-- <main class="content" style="padding: 18px">
+        <div class="output-container">
 
-      <a class="output-folder" href="{{ '/Output/Editorial-Articles' | relative_url }}">
-        <span class="material-icons-round output-folder-icon"> folder </span>
-        <p class="output-folder-name">Editorial Article</p>
-      </a>
-    </div>
-  </main>
+          <a
+            class="output-folder"
+            href="{{ '/Outputs/reflection-paper' | relative_url }}"
+          >
+           
+            <span class="material-icons-round output-folder-icon">
+              folder
+            </span>
+            <p class="output-folder-name">Reflection Paper</p>
+            <p class="output-folder-name"> Philosophy</p>
+             <p class="output-folder-name">folder</p>
+          </a>
+          <a
+            class="output-folder"
+            href="{{ '/Output/Editorial-Articles' | relative_url }}"
+          >
+            <span class="material-icons-round output-folder-icon">
+              folder
+            </span>
+            <p class="output-folder-name">Editorial Article</p>
+          </a>
+        </div>
+      </main> -->
 
-  {%- include assets/BTT.html-%}
-  {%- include Footer.html-%}
-</body>
-
+    {%- include assets/BTT.html-%} {%- include Footer.html-%}
+  </body>
 </html>

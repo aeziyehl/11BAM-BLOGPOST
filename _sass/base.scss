@@ -17,7 +17,7 @@ html {
 }
 
 //
-// Reseting elements
+// Resetting elements
 //
 
 body,
@@ -100,6 +100,17 @@ p {
   padding: 0 $font-spacing - 5 0 $font-spacing - 5;
   margin: 0 auto 0 auto;
   max-width: 1168px;
+}
+
+.article-wrapper {
+  padding: 12px $font-spacing - 5 0 $font-spacing - 5;
+  margin: 0 auto 0 auto;
+  max-width: 1000px;
+
+p {
+    text-align: justify;
+    text-indent: 10%;
+  }
 }
 
 .outputs-content {
@@ -227,7 +238,7 @@ figcaption {
 }
 
 //
-//  Blockquotes
+//  Blockquote
 //
 blockquote {
   color: $blockquote-text-color;
@@ -364,36 +375,6 @@ div {
   }
 }
 
-//
-//  Icons
-//
-
-// .stackoverflow {
-//   color: #f66a0a;
-// }
-
-// .youtube {
-//   color: #dd0505;
-// }
-
-// .github {
-//   color: $Github;
-
-// }
-
-.svg-icon {
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  fill: currentColor;
-  padding: 5px 3px 2px 5px;
-  vertical-align: text-bottom;
-}
-
-.gitlab {
-  color: $Github;
-}
-
 dl {
   padding: 0;
 
@@ -459,6 +440,241 @@ dl {
       margin-right: 5px;
       margin-top: 50px;
       fill: $md-sys-color-on-surface;
+    }
+  }
+}
+
+//
+// Design Elements
+//
+
+.window {
+  @include outline;
+  margin: 50px 30px;
+  background: $md-sys-color-surface-container;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 12px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.window-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.window-sidebar {
+  width: 200px;
+  background: $md-sys-color-background;
+  padding: 15px 20px;
+  border-right: 1px solid $md-sys-color-outline-variant;
+
+  .sidebar-section {
+    @include label-large;
+    // letter-spacing: 5px;
+    margin: 15px 0 5px 10px;
+  }
+
+  .sidebar-item {
+    @include label-medium;
+    padding: 10px 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: default;
+  }
+  .active {
+    @include on-inverse-surface;
+  }
+
+  @media screen and (max-width: 993px) {
+    display: none;
+  }
+}
+
+.window-title-bar {
+  @include primary-container;
+  cursor: default;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 5px;
+
+  p {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .window-title-bar-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+
+    .control {
+      border-radius: 12px;
+      padding: 4px;
+      font-weight: 900;
+    }
+  }
+}
+
+.output-container {
+  @include secondary;
+  height: 4fr;
+
+  .output-folder {
+    @include primary;
+    display: flex;
+    align-items: center;
+    border: 2px solid $border-color;
+    border-radius: 12px;
+
+    .output-folder-icon {
+      font-size: 100px;
+    }
+
+    .output-folder-name {
+      @include title-small;
+      font-size: 34px;
+      margin: 0px;
+      padding-top: 10px;
+    }
+
+    a {
+      color: inherit;
+    }
+    &:hover {
+      @include md-sys-elevation-level5($md-sys-color-primary);
+    }
+  }
+
+  @media (max-width: $defualt-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Mixin for the grid layout to ensure header and rows align perfecty
+@mixin list-grid {
+  display: grid;
+  // Columns: Name (flexible), subject (fixed), Type (fixed), Size (fixed)
+  grid-template-columns: 40% 30% 20% 20%;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+
+  @media screen and (max-width: 593px) {
+    grid-template-columns: 50% 50% 20% 20%;
+  }
+}
+
+.explorer-window {
+  width: 100%;
+}
+
+// Header Styling
+.explorer-header {
+  @include list-grid;
+  @include label-small;
+  line-height: 40px;
+  border-right: 1px solid transparent; // Placeholder for formatting
+  padding-bottom: 8px;
+  padding-top: 8px;
+  user-select: none;
+
+  .col {
+    position: relative;
+    padding-left: 5px;
+    border-right: 1px solid transparent;
+    cursor: default;
+
+    &:hover {
+      @include surface;
+    }
+
+    // The divider line between headers
+    &:not(:last-child):after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 20%;
+      height: 60%;
+      width: 1px;
+      background-color: $md-sys-color-outline;
+    }
+
+    @media screen and (max-width: 593px) {
+      &.type,
+      &.size {
+        display: none;
+      }
+    }
+  }
+
+  .sort-arrow {
+    font-size: 10px;
+    margin-left: 5px;
+    display: inline-block;
+    transform: rotate(180deg); // Pointing up
+  }
+}
+
+// Row Styling
+.file-list {
+  .file-row {
+    @include list-grid;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    border: 1px solid transparent; // Prevents layout shift on border hover
+
+    // Hover Effect
+    &:hover {
+      @include surface;
+    }
+
+    .col {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &.name {
+        color: $md-sys-color-on-surface;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      &.subject,
+      &.type,
+      &.size {
+        color: $md-sys-color-on-surface-variant;
+      }
+
+      @media screen and (max-width: 593px) {
+        &.type,
+        &.size {
+          display: none;
+        }
+      }
     }
   }
 }

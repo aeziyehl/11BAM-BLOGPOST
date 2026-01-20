@@ -2,12 +2,12 @@
 site-title: OUTPUTS
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   {%- include Head.html -%} {%- include Header.html -%}
 
-  <main class="content" style="padding: 18px">
-    <div class="outputs-status">
+  <main class="window" style="height: 600px">
+    <div class="window-title-bar">
       <p>C:/Users/BAM/Documents/Outputs</p>
       <div class="outputs-status-control">
         <span class="material-icons-round control"> minimize </span>
@@ -15,16 +15,69 @@ site-title: OUTPUTS
         <span class="material-icons-round control"> close </span>
       </div>
     </div>
-    <div class="output-container">
-      <a class="output-folder" href="{{ '/Outputs/reflection-paper' | relative_url }}">
-        <span class="material-icons-round output-folder-icon"> folder </span>
-        <p class="output-folder-name">Reflection Paper</p>
-      </a>
+    <div class="window-container">
+  <aside class="window-sidebar">
+          <div class="sidebar-section">Favorites</div>
+          <div class="sidebar-item active">
+            <div class="material-icons-round">insert_drive_file</div>
+            All Files
+          </div>
+          <div class="sidebar-item">
+            <div class="material-icons-round">query_builder</div>
+            Recent
+          </div>
+          <div class="sidebar-item">
+            <div class="material-icons-round">offline_pin</div>
+            Outputs
+          </div>
+          <div class="sidebar-section">Tags</div>
+          <div class="sidebar-item">
+            <span style="color: #ff5f56">●</span> School
+          </div>
+          <div class="sidebar-item">
+            <span style="color: #27c93f">●</span> Personal
+          </div>
+        </aside>
+      <div class="explorer-window">
+        <div class="explorer-header">
+          <div class="col name">Name <span class="sort-arrow">^</span></div>
+          <div class="col subject">Subject</div>
+          <div class="col type">Type</div>
+          <div class="col size">Size</div>
+        </div>
 
-      <a class="output-folder" href="{{ '/Output/Editorial-Articles' | relative_url }}">
-        <span class="material-icons-round output-folder-icon"> folder </span>
-        <p class="output-folder-name">Editorial Article</p>
-      </a>
+        <div class="file-list">
+          <a class="file-row" href="{{ '/Outputs/reflection-paper' | relative_url }}">
+            <div class="col name">
+              <div class="material-icons-round">folder</div>
+              <span>Reflection Paper</span>
+            </div>
+            <div class="col subject">Philosophy</div>
+            <div class="col type">File folder</div>
+            <div class="col size"></div>
+          </a>
+
+          <a class="file-row"  href="{{ '/Output/Editorial-Articles' | relative_url }}">
+            <div class="col name">
+               <div class="material-icons-round">folder</div>
+              <span>Editorial Article</span>
+            </div>
+            <div class="col subject">Philosophy, Earth and Science</div>
+            <div class="col type">File folder</div>
+            <div class="col size"></div>
+          </a>
+
+          <a class="file-row" href="{{ '/Output/Literary-Critique' | relative_url }}">
+            <div class="col name">
+              <div class="material-icons-round">folder</div>
+              <span>Reaction Paper</span>
+            </div>
+            <div class="col subject">USCP, Literature</div>
+            <div class="col type">File folder</div>
+            <div class="col size"></div>
+          </a>
+        </div>
+      </div>
     </div>
   </main>
 

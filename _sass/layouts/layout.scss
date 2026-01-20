@@ -13,16 +13,12 @@
 //
 .site-nav {
   @include md-sys-elevation-level2($md-sys-color-surface);
+  border-bottom: 1px solid $md-sys-color-outline-variant;
   display: flex;
   align-items: center;
-  height: 80px;
+  justify-content: space-between;
+  height: 70px;
   width: 100%;
-
-  .site-nav-clickable-wrapper {
-    display: flex;
-    align-items: center;
-    flex: auto;
-  }
 
   .site-nav-link-container {
     margin-right: 25px;
@@ -32,8 +28,8 @@
         background: $md-sys-color-primary;
         color: $md-sys-color-on-primary;
         transition: $transition-links;
-        padding: 11px 19px 13px;
-        border-radius: 40px;
+        padding: 10px 18px;
+        border-radius: 19px;
         @include animation-fade-in(0.3);
 
         &:hover {
@@ -46,12 +42,12 @@
   a {
     margin: 0 5px;
     color: $text-color;
-    font-size: 17px;
-    padding: 12px;
-    border-radius: 12px;
-    transition: $transition-links;
-    @include animation-fade-in(0.6);
-    @include title-small;
+    padding: 10px 18px;
+    border-radius: 19px;
+    // transition: $transition-links;
+    // @include animation-fade-in(0.6);
+    @include label-small;
+    font-weight: 800;
     text-transform: uppercase;
     &:hover {
       @include md-sys-elevation-level5($md-sys-color-surface-container-highest);
@@ -115,7 +111,7 @@
     border-radius: 12px;
     display: none;
     flex-direction: column;
-    left: 410px;
+    right: 260px;
     position: absolute;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -253,23 +249,16 @@
 //   top: 0;
 //   width: 100%;
 // }
-//
+
 // Header Banner
-//
 
 .header-home-mod {
   @include md-sys-elevation-level2($md-sys-color-surface);
   position: static;
 }
 .site-banner {
-  @include md-sys-elevation-level2($md-sys-color-surface);
-  padding: 15px;
-  margin: 0px 15px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
   color: $text-color;
   text-align: center;
-  justify-content: center;
   line-height: 1.5;
 
   .site-banner-img-container {
@@ -358,7 +347,6 @@
 
   @media screen and (min-width: 993px) {
     display: flex;
-    margin: 0px 100px 10px 100px;
     height: 600px;
     background-image: url("homepage-pic.png");
     background-repeat: no-repeat;
@@ -400,43 +388,6 @@
 }
 .outputs-header {
   margin-bottom: $font-spacing;
-}
-.outputs-status {
-  @include primary-container;
-  cursor: default;
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
-
-  p {
-    @include title-medium;
-    font-weight: 700;
-    margin: 0;
-  }
-
-  .outputs-status-control {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 50%;
-    margin-right: 5px;
-
-    .control {
-      @include primary;
-      border-radius: 12px;
-      padding: 4px;
-      font-weight: 900;
-    }
-  }
 }
 
 .outputs-title {
@@ -682,47 +633,6 @@
   }
 }
 
-.output-container {
-  @include secondary;
-  height: 4fr;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  padding: 2%;
-  border-bottom-left-radius: 18px;
-  border-bottom-right-radius: 18px;
-
-  .output-folder {
-    @include primary;
-    display: flex;
-    align-items: center;
-    border: 2px solid $border-color;
-    border-radius: 12px;
-
-    .output-folder-icon {
-      font-size: 100px;
-    }
-
-    .output-folder-name {
-      @include title-small;
-      font-size: 34px;
-      margin: 0px;
-      padding-top: 10px;
-    }
-
-    a {
-      color: inherit;
-    }
-    &:hover {
-      @include md-sys-elevation-level5($md-sys-color-primary);
-    }
-  }
-
-  @media (max-width: $defualt-width) {
-    display: flex;
-    flex-direction: column;
-  }
-}
 //
 // Site footer
 //

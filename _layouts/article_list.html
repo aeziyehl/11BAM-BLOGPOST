@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  {%- include Head.html -%}
+
+  <body>
+    {%- include Header.html -%}
+
+    <main class="window" style="height: 600px">
+      {% include assets/anchor-headings.html html=content anchorBody="#" %} {%-
+      assign date_format = site.date_format | default: "%b %-d, %Y" -%} {%-
+      assign posts = paginator.posts -%} {%- if posts.size > 0 -%}
+      <div class="window-title-bar-list window-title-bar">
+        <p>{{ page.site-title }}</p>
+
+        <div class="window-title-bar-list-paginator">
+          {% if paginator.previous_page %}
+          <a
+            href="{{ paginator.previous_page_path | relative_url }}"
+            class="material-icons-round outputs-nav-svg"
+          >
+            arrow_back_ios
+          </a>
+          {% else %}
+          <a class="material-icons-round outputs-nav-svg disable-svg">
+            chevron_left
+          </a>
+          {% endif %}
+          <span>{{ paginator.page }} / {{ paginator.total_pages }}</span>
+          {%- if paginator.next_page %}
+          <a
+            href="{{ paginator.next_page_path | relative_url }}"
+            class="material-icons-round outputs-nav-svg"
+          >
+            arrow_forward_ios
+          </a>
+          {%- else %}
+          <a class="material-icons-round outputs-nav-svg disable-svg">
+            chevron_right
+          </a>
+          {%- endif %}
+        </div>
+        <div class="window-title-bar-control">
+          <span class="material-icons-round control"> minimize </span>
+          <span class="material-icons-round control"> crop_square </span>
+          <span class="material-icons-round control"> close </span>
+        </div>
+      </div>
+      <div class="window-container">
+        <aside class="window-sidebar">
+          <div class="sidebar-section">Favorites</div>
+          <div class="sidebar-item">
+            <div class="material-icons-round">insert_drive_file</div>
+            All Files
+          </div>
+          <div class="sidebar-item">
+            <div class="material-icons-round">query_builder</div>
+            Recent
+          </div>
+          <div class="sidebar-item active">
+            <div class="material-icons-round">offline_pin</div>
+            Outputs
+          </div>
+          <div class="sidebar-section">Tags</div>
+          <div class="sidebar-item">
+            <span style="color: #ff5f56">●</span> School
+          </div>
+          <div class="sidebar-item">
+            <span style="color: #27c93f">●</span> Personal
+          </div>
+        </aside>
+        <div class="explorer-window">
+          <div class="explorer-header">
+            <div class="col name">Name <span class="sort-arrow">^</span></div>
+            <div class="col subject">Group</div>
+            <div class="col type">Type</div>
+            <div class="col size">Size</div>
+          </div>
+          <div class="file-list">
+            {%- for post in posts -%}
+            <a class="file-row" href="{{ post.url | relative_url }}">
+              <div class="col name">
+                <div class="material-icons-round">article</div>
+                <span>{{ post.title | escape }}</span>
+              </div>
+              <div class="col subject">{{ post.group | escape }}</div>
+              <div class="col type">docx file</div>
+              <div class="col size">11.kb</div>
+            </a>
+            {%- endfor -%}
+          </div>
+        </div>
+      </div>
+      {%- endif -%}
+    </main>
+
+    {%- include Footer.html -%} {%- include assets/BTT.html -%}
+  </body>
+</html>

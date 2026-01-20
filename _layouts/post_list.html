@@ -13,10 +13,10 @@
         {%- assign posts = paginator.posts -%}
 
         {%- if posts.size > 0 -%}
-        <div class="outputs-status-list outputs-status">
+        <div class="window-title-bar-list window-title-bar">
             <p>{{ page.site-title }}</p>
 
-            <div class="outputs-status-list-paginator">
+            <div class="window-title-bar-list-paginator">
                 {% if paginator.previous_page %}
                 <a href="{{ paginator.previous_page_path | relative_url }}" class="material-icons-round outputs-nav-svg">
                     arrow_back_ios
@@ -39,7 +39,7 @@
                 </a>
                 {%- endif %}
             </div>
-            <div class="outputs-status-control">
+            <div class="window-title-bar-control">
                 <span class="material-icons-round control">
                     minimize
                 </span>
