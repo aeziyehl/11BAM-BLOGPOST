@@ -9,7 +9,7 @@
       {% include assets/anchor-headings.html html=content anchorBody="#" %} {%-
       assign date_format = site.date_format | default: "%b %-d, %Y" -%} {%-
       assign posts = paginator.posts -%} {%- if posts.size > 0 -%}
-      <div class="window-title-bar-list window-title-bar">
+      <div class="window-title-bar paginator">
         <p>{{ page.site-title }}</p>
 
         <div class="window-title-bar-list-paginator">
@@ -75,7 +75,7 @@
             <div class="col type">Type</div>
             <div class="col size">Size</div>
           </div>
-          <div class="file-list">
+          <div class="file-list article" >
             {%- for post in posts -%}
             <a class="file-row" href="{{ post.url | relative_url }}">
               <div class="col name">

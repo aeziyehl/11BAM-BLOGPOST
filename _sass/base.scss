@@ -107,7 +107,7 @@ p {
   margin: 0 auto 0 auto;
   max-width: 1000px;
 
-p {
+  p {
     text-align: justify;
     text-indent: 10%;
   }
@@ -459,6 +459,10 @@ dl {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
+  @media screen and (max-width: 600px) {
+    margin: 20px 5px;
+  }
 }
 
 .window-container {
@@ -519,6 +523,17 @@ dl {
     font-size: 1rem;
     font-weight: 700;
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &.paginator {
+    @media screen and (max-width: 593px) {
+      p {
+        display: none;
+      }
+    }
   }
 
   .window-title-bar-control {
@@ -582,7 +597,7 @@ dl {
   padding: 0 10px;
 
   @media screen and (max-width: 593px) {
-    grid-template-columns: 50% 50% 20% 20%;
+    grid-template-columns: 50% 50% 0% 0%;
   }
 }
 
@@ -641,8 +656,7 @@ dl {
 .file-list {
   .file-row {
     @include list-grid;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding: 10px 6px;
     cursor: pointer;
     border: 1px solid transparent; // Prevents layout shift on border hover
 
@@ -670,6 +684,7 @@ dl {
       }
 
       @media screen and (max-width: 593px) {
+        padding: 10px 0px;
         &.type,
         &.size {
           display: none;
@@ -677,4 +692,9 @@ dl {
       }
     }
   }
+}
+
+.list-emphasis {
+  background-color: $md-sys-color-surface-container-low;
+  border-radius: 8px;
 }
