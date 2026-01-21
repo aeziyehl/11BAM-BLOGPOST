@@ -4,7 +4,7 @@ date: 2026-01-20 00:00:00 Z
 category: literary-critique
 layout: article
 site-title: Literary Critique Analysis on Swaddling Clothes
-author: Aziel Lance S. Suarez, Carrie Suzzane N. Reoma, Francis Augustin C. Dandan
+author:
 group: 2
 ---
 ##  Introduction
